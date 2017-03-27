@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- МЕТА --> 
+	<title>Ana sayfa</title> 
+	<meta name="description" content="maximum 155 karakter" /> 
+	<meta name="Keywords" content="меtа-taglar, şablon, html, css">
+	<!-- open graph Facebook--> 
+	<meta property="og:title" content="Başlık" /> 
+	<meta property="og:type" content="website" /> 
+
+	<!-- Eğer site çok dilde ise --> 
+	<!-- <meta property="og:locale" content="ru_RU"> --> 
+	<meta property="og:url" content="http://localhost.my" /> 
+	<!-- Min 600х315, maksimum 8Мb --> 
+	<meta property="og:image" content="http://localhost.my/img/og_cover.jpg" /> 
+	<meta property="og:description" content="Açıklama 155 karakter fazla olmayacak" /> 
+	<meta property="fb:admins" content="Facebook ID" />
+
+	<!-- Twitter --> 
+	<meta name="twitter:card" content="summary_large_image"> 
+	<meta name="twitter:site" content="@şirketinize__ait__twitter__nik"> 
+	<meta name="twitter:title" content="Başlık"> 
+	<meta name="twitter:description" content="Açıklama 155 karakter fazla olmayacak"> 
+	<meta name="twitter:creator" content="@twitter__nik">
+
+	<!-- Resim boyutları min 280х150, max 1Мб --> 
+	<meta name="twitter:image" content="http://localhost.my/img/tw_cover.jpg"> 
+
+	<!-- G+ / Pinterest --> 
+	<meta itemprop="name" content="Başlık"> 
+	<meta itemprop="description" content="Açıklama 155 karakter fazla olmayacak"> 
+	<meta itemprop="image" content="http://localhost.my/img/g_cover.jpg"> 
+
+	<!-- Google authorship --> 
+	<link rel="author" href="https://plus.google.com/[Google+_Profile]/posts"/> 
+	<link rel="publisher" href="https://plus.google.com/[Google+_Page_Profile]"/> 
+
+	<!-- Favicons and icons for websites --> 
+	<!-- For new browsers - multisize ico -->
+	<link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="favicon.ico">
+	<!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicon-152.png">
+	<!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon-144.png">
+	<!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicon-120.png">
+	<!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon-114.png">
+	<!-- For iPhone 6+ -->
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="favicon-180.png">
+	<!-- For first- and second-generation iPad: -->
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon-72.png">
+	<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+	<link rel="apple-touch-icon-precomposed" href="favicon-57.png">
+	<!-- For Old Chrome -->
+	<link rel="icon" href="favicon-32.png" sizes="32x32">
+	<!-- For IE10 Metro -->
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="favicon-144.png">
+	<!-- Chrome for Android -->
+	<link rel="icon" sizes="192x192" href="favicon-192.png">
+
+	<!-- Chrome, Firefox OS and Opera --> 
+	<meta name="theme-color" content="#4285f4" />
+	<!-- Windows Phone --> 
+	<meta name="msapplication-navbutton-color" content="#4285f4" /> 
+	<!-- iOS Safari --> 
+	<meta name="apple-mobile-web-app-capable" content="yes" /> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-transcluent" /> 
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)};function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n};function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+	<!-- Load Fonts CSS Start -->
+	<script>
+			loadCSS( "css/fonts.min.css?ver=1.0.0", false, "all" ); // Loading fonts, if the site is located in a subfolder
+			// loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" ); // Loading fonts, if the site is at the root
+		</script>
+		<!-- Load Fonts CSS End -->
+
+		<link rel="stylesheet" href="css/header.min.css">
+		<link rel="stylesheet" href="css/h-media.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+		<link rel="stylesheet" href="css/m-media.min.css">
+		<!-- <link rel="stylesheet" href="css/fonts.min.css"> -->
+
+		<!-- Chrome, Firefox OS and Opera -->
+		<meta name="theme-color" content="#000">
+		<!-- Windows Phone -->
+		<meta name="msapplication-navbutton-color" content="#000">
+		<!-- iOS Safari -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	</head>
+
+	<body itemscope="" itemtype="https://schema.org/SiteNavigationElement">
+
+		<!-- Loader Start -->
+		<div id="loader-wrapper">
+			<div class="y-slide">
+				<div class="container">
+					<div class="page">
+						
+						<div class="windmill" data-animation="rotate-infinite">
+							<div class="wing wing_top" data-animation="fadein-top">
+								<div class="triangle_big"></div>
+								<div class="triangle_small"></div>
+							</div>
+							<div class="wing wing_right" data-animation="fadein-right">
+								<div class="triangle_big"></div>
+								<div class="triangle_small"></div>
+							</div>
+							<div class="wing wing_bottom" data-animation="fadein-bottom">
+								<div class="triangle_big"></div>
+								<div class="triangle_small"></div>
+							</div>
+							<div class="wing wing_left" data-animation="fadein-left">
+								<div class="triangle_big"></div>
+								<div class="triangle_small"></div>
+							</div>
+						</div>
+					</div>
+					<div class="page">
+						<div class="windmill" data-animation="rotate-infinite">
+							<div class="wing wing_top" data-animation="fadein-top">
+								<div class="triangle_big"></div>
+								<div class="triangle_small"></div>
+							</div>
+							<div class="wing wing_right" data-animation="fadein-right">
+								<div class="triangle_big"></div>
+								<div class="triangle_small"></div>
+							</div>
+							<div class="wing wing_bottom" data-animation="fadein-bottom">
+								<div class="triangle_big"></div>
+								<div class="triangle_small"></div>
+							</div>
+							<div class="wing wing_left" data-animation="fadein-left">
+								<div class="triangle_big"></div>
+								<div class="triangle_small"></div>
+							</div>
+						</div>
+					</div>
+					<div class="page">
+						<div class="windmill" data-animation="rotate-infinite">
+							<div class="wing wing_top" data-animation="fadein-top">
+								<div class="triangle_big"></div>
+								<div class="triangle_small"></div>
+							</div>
+							<div class="wing wing_right" data-animation="fadein-right">
+								<div class="triangle_big"></div>
+								<div class="triangle_small"></div>
+							</div>
+							<div class="wing wing_bottom" data-animation="fadein-bottom">
+								<div class="triangle_big"></div>
+								<div class="triangle_small"></div>
+							</div>
+							<div class="wing wing_left" data-animation="fadein-left">
+								<div class="triangle_big"></div>
+								<div class="triangle_small"></div>
+							</div>
+						</div>
+					</div>
+					<div class="page">
+						<div class="windmill" data-animation="rotate-infinite">
+							<div class="wing wing_top" data-animation="fadein-top">
+								<div class="triangle_big"></div>
+								<div class="triangle_small"></div>
+							</div>
+							<div class="wing wing_right" data-animation="fadein-right">
+								<div class="triangle_big"></div>
+								<div class="triangle_small"></div>
+							</div>
+							<div class="wing wing_bottom" data-animation="fadein-bottom">
+								<div class="triangle_big"></div>
+								<div class="triangle_small"></div>
+							</div>
+							<div class="wing wing_left" data-animation="fadein-left">
+								<div class="triangle_big"></div>
+								<div class="triangle_small"></div>
+							</div>
+						</div>
+					</div>
+					<div class="page">
+						<div class="windmill" data-animation="rotate-infinite">
+							<div class="wing wing_top" data-animation="fadein-top">
+								<div class="triangle_big"></div>
+								<div class="triangle_small"></div>
+							</div>
+							<div class="wing wing_right" data-animation="fadein-right">
+								<div class="triangle_big"></div>
+								<div class="triangle_small"></div>
+							</div>
+							<div class="wing wing_bottom" data-animation="fadein-bottom">
+								<div class="triangle_big"></div>
+								<div class="triangle_small"></div>
+							</div>
+							<div class="wing wing_left" data-animation="fadein-left">
+								<div class="triangle_big"></div>
+								<div class="triangle_small"></div>
+							</div>
+						</div>
+					</div>
+					<div class="page">
+						<div class="windmill" data-animation="rotate-infinite">
+							<div class="wing wing_top" data-animation="fadein-top">
+								<div class="triangle_big"></div>
+								<div class="triangle_small"></div>
+							</div>
+							<div class="wing wing_right" data-animation="fadein-right">
+								<div class="triangle_big"></div>
+								<div class="triangle_small"></div>
+							</div>
+							<div class="wing wing_bottom" data-animation="fadein-bottom">
+								<div class="triangle_big"></div>
+								<div class="triangle_small"></div>
+							</div>
+							<div class="wing wing_left" data-animation="fadein-left">
+								<div class="triangle_big"></div>
+								<div class="triangle_small"></div>
+							</div>
+						</div>
+					</div>
+					<div class="page">
+						<div class="windmill" data-animation="rotate-infinite">
+							<div class="wing wing_top" data-animation="fadein-top">
+								<div class="triangle_big"></div>
+								<div class="triangle_small"></div>
+							</div>
+							<div class="wing wing_right" data-animation="fadein-right">
+								<div class="triangle_big"></div>
+								<div class="triangle_small"></div>
+							</div>
+							<div class="wing wing_bottom" data-animation="fadein-bottom">
+								<div class="triangle_big"></div>
+								<div class="triangle_small"></div>
+							</div>
+							<div class="wing wing_left" data-animation="fadein-left">
+								<div class="triangle_big"></div>
+								<div class="triangle_small"></div>
+							</div>
+						</div>
+					</div>
+					<div class="page">
+						<div class="windmill" data-animation="rotate-infinite">
+							<div class="wing wing_top" data-animation="fadein-top">
+								<div class="triangle_big"></div>
+								<div class="triangle_small"></div>
+							</div>
+							<div class="wing wing_right" data-animation="fadein-right">
+								<div class="triangle_big"></div>
+								<div class="triangle_small"></div>
+							</div>
+							<div class="wing wing_bottom" data-animation="fadein-bottom">
+								<div class="triangle_big"></div>
+								<div class="triangle_small"></div>
+							</div>
+							<div class="wing wing_left" data-animation="fadein-left">
+								<div class="triangle_big"></div>
+								<div class="triangle_small"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="pre"></div> -->
+			<div class="loader-section section-left"></div>
+			<div class="loader-section section-right"></div>
+		</div>
+		<!-- Loader The End -->
+
+		<!-- Header Start-->
+		<header class="page-header">
+
+			<div class="header-top bsh">
+				<div class="container">
+
+					<div class="row">
+
+						<a href="#" class="open-mobile-menu">
+							<i class="icon-list"></i>
+						</a>
+
+						<div class="col-md-3 col-sm-5 col-xs-12">
+							<a href="index.html" class="logo">
+								<img src="img/logo.png" alt="Superstep" class="logo__picture">
+							</a>
+						</div>
+
+						<div class="col-md-5 col-sm-5 col-xs-12 header-search-column">
+							<div class="header-search">
+								<form class="header-form">
+									<input class="search-input" type="text" name="search" placeholder="Dünya markalarını keşfet">
+									<button class="btn" type="submit"></button>
+								</form>
+							</div>
+						</div>
+						
+						<div class="col-md-4 header-user-menu">
+							<ul class="clearfix pull-right">
+								<li class="register-login">
+									<a href="#" class="toggle-login">
+										<img src="img/header/user.png" alt="">
+									</a>
+									<ul class="register-in clearfix">
+										<li>
+											<a href="#"><span>üye ol</span></a>
+										</li>
+										<li>
+											<a href="#"><span>üye girişi</span></a>
+										</li>
+									</ul>
+								</li>
+
+								<li class="basket">
+									<a href="#" class="basket-link">
+										<span>Sepetim</span>
+										<b class="basket-count">
+											<em>(</em><span>0</span><em>)</em>
+										</b>
+									</a>
+								</li>
+
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="header-menu clearfix">
+				<div class="container">
+					<div class="row clearfix">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+							<!-- SEO START -->
+							<div role="navigation" itemscope="" itemtype="https://schema.org/SiteNavigationElement">
+								<nav class="menu">
+									<ul class="menu__list clearfix">
+										<li class="menu__item">
+											<a itemprop="url" title="Link to Home" href="brands.html" class="menu__link menu__link--active">
+												<span itemprop="name">Markalar</span>
+											</a>
+										</li>
+										<li class="menu__item">
+											<a itemprop="url" title="Link to Home" href="index2.html" class="menu__link">
+												<span itemprop="name">erkek</span>
+											</a>
+										</li>
+										<li class="menu__item">
+											<a itemprop="url" title="Link to Home" href="index3.html" class="menu__link">
+												<span itemprop="name">kadın</span>
+											</a>
+										</li>
+										<li class="menu__item">
+											<a itemprop="url" title="Link to Home" href="products-list.html" class="menu__link">
+												<span itemprop="name">liste</span>
+											</a>
+										</li>
+										<li class="menu__item">
+											<a itemprop="url" title="Link to Home" href="#" class="menu__link icon new-season">yeni sezon
+											</a>
+										</li>
+										<li class="menu__item ">
+											<a itemprop="url" title="Link to Home" href="#" class="menu__link icon discount">
+												<span itemprop="name">indirim</span>
+											</a>
+										</li>
+										<li class="menu__item mg">
+											<a itemprop="url" title="Link to Home" href="#" class="menu__link">
+												<span itemprop="name">mağazalar</span>
+											</a>
+										</li>
+										<li class="menu__item bl">
+											<a itemprop="url" title="Link to Home" href="#" class="menu__link icon blog">
+												<span itemprop="name">Blog</span>
+											</a>
+										</li>
+										<li class="menu__item header-brand">
+											<div class="header-brand__link"><img src="img/converse-logo.png" alt="Alt"></div>
+										</li>
+										<li class="menu__item header-brand kd brnone">
+											<div class="header-brand__link"><img src="img/keds-logo.png" alt="Alt"></div>
+										</li>
+									</ul>
+								</nav>
+							</div>
+							<!-- SEO END -->
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Header The End-->
+		
+		<!-- Main-slider Start-->
+		<section class="slider container-fluid sect">
+			<div class="preloader"></div>
+
+			<div class="row">
+
+				<div class="slider-slick-list">
+					
+					<div class="slide-item" data-dot="1">
+
+						<img src="img/slider/slider.jpg" alt="Alt" class="img-responsive" />
+
+						<div class="slide-right">
+
+							<div class="slide-center container">
+								<div class="slide-text">
+									<h1 class="slide-title">sneaker <br> <span>ruhu</span> </h1>
+									<p class="slide-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin enim nisi, pharetra a dictum ut, faucibus sit amet sapien. Aliquam sit amet tempus tortor</p>
+									<div class="btn-wrap">
+										<a href="#" class="btn btn-large">koleksiyonu keşfet</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="slide-item" data-dot="2">
+
+						<img src="img/slider/slider.jpg" alt="Alt" class="img-responsive" />
+
+						<div class="slide-right">
+
+							<div class="slide-center container">
+								<div class="slide-text">
+									<h1 class="slide-title">sneaker <br> <span>ruhu</span> </h1>
+
+									<p class="slide-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin enim nisi, pharetra a dictum ut, faucibus sit amet sapien. Aliquam sit amet tempus tortor</p>
+									<div class="btn-wrap">
+										<a href="#" class="btn btn-large">koleksiyonu keşfet</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="slide-item" data-dot="3">
+
+						<img src="img/slider/slider.jpg" alt="Alt" class="img-responsive" />
+
+						<div class="slide-right">
+
+							<div class="slide-center container">
+								<div class="slide-text">
+									<h1 class="slide-title">sneaker <br> <span>ruhu</span> </h1>
+									<p class="slide-descr">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin enim nisi, pharetra a dictum ut, faucibus sit amet sapien. Aliquam sit amet tempus tortor
+									</p>
+									<div class="btn-wrap">
+										<a href="#" class="btn btn-large">koleksiyonu keşfet</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="slide-item" data-dot="4">
+
+						<img src="img/slider/slider.jpg" alt="Alt" class="img-responsive" />
+
+						<div class="slide-right">
+
+							<div class="slide-center container">
+								<div class="slide-text">
+									<h1 class="slide-title">sneaker <br> <span>ruhu</span> </h1>
+									<p class="slide-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin enim nisi, pharetra a dictum ut, faucibus sit amet sapien. Aliquam sit amet tempus tortor</p>
+									<div class="btn-wrap">
+										<a href="#" class="btn btn-large">koleksiyonu keşfet</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+		<!-- Main-slider The End-->
+
+		<!-- Discover Start -->
+		<section class="sect discover-sect">
+			<div class="container">
+
+				<div class="row clearfix">
+
+					<div class="discover-wrap col-sm-12">
+
+						<div class="discover">
+							<a rel="nofollow" href="#">
+								<figure class="discover-effect">
+									<img src="img/section1/1.png" alt="About">
+									<span class="btn discount-btn">Hemen  keşfet &#187; </span>
+								</figure>
+							</a>
+						</div>
+
+						<div class="discover">
+
+							<div class="discover-left">
+								<a rel="nofollow" href="#">
+									<figure class="discover-effect">
+										<img src="img/section1/2.png" alt="About">
+										<div class="discount-circle">
+											<b>%</b><span>25</span> <br> İNDİRİM
+										</div>
+										<span class="btn discount-btn">Hemen keşfet &#187;</span>
+									</figure>
+								</a>
+							</div>
+
+							<div class="discover-left">
+								<a rel="nofollow" href="#">
+									<figure class="discover-effect">
+										<img src="img/section1/3.png" alt="About">
+										<span class="herschel-logo"></span>
+										<span class="btn discount-btn l">Hemen keşfet &#187;</span>
+									</figure>
+								</a>
+							</div>
+
+						</div>
+
+					</div>
+					
+				</div>
+
+			</div>
+		</section>
+		<!-- Discover The End -->
+
+		<!-- Products (Special suggestion) Start -->
+		<section class="sect">
+			<div class="container">
+
+				<div class="slider-products">
+					<div class="row">
+						<div class="col-md-12">
+							<h2  class="icon sect-title special">SİZE ÖZEL ÖNERİLERİNİZ</h2>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+
+							<div class="products-nav row">
+								<div class="nav p"></div>
+								<div class="nav n"></div>
+							</div>
+
+							<!-- products-list -->
+							<div class="products-list" id="products-js">
+								<meta itemprop="name" content="Ayakkabılar">
+
+								<!-- İtem 1-->
+								<div itemscope itemprop="itemListElement" itemtype="https://schema.org/Product" class="products-item">
+									<div class="pr-slide-wrap">
+
+										<!-- Top -->
+										<div class="product-img-top">
+											<span class="sale">%25</span>
+											<a itemprop="url" href="#">
+												<img itemprop="image" src="img/section2/1.png" class="img-responsive" alt="Alt" title="NameImg" />
+											</a>
+										</div>
+										<!-- Middle -->
+										<div class="product-block">
+											<h3 class="product-title">
+												<a itemprop="url" href="#"><span itemprop="name">New balance</span></a>
+											</h3>
+											<div class="product-text clearfix">
+												<p itemprop="description">Adidas Superstar Foundation Ayakkabı </p>
+											</div>
+										</div>
+										<!-- Bottom -->
+										<div itemprop="offers" itemscope="" itemtype="https://schema.org/Offer" class="footer-price">
+											<span class="old-price">318tl</span>
+											<meta itemprop="priceCurrency" content="TRY">
+											<meta itemprop="price" content="217.5">
+											<span class="new-price">
+												<span itemprop="price" content="218">218</span>
+												<span itemprop="priceCurrency" content="TRY">tl</span>
+											</span>
+										</div>
+
+									</div>
+								</div>
+								<!-- İtem 1-->
+
+								<!-- İtem 2-->
+								<div itemscope itemprop="itemListElement" itemtype="https://schema.org/Product" class="products-item">
+									<div class="pr-slide-wrap">
+
+										<!-- Top -->
+										<div class="product-img-top">
+											<span class="sale">%25</span>
+											<a itemprop="url" href="#">
+												<img itemprop="image" src="img/section2/1.png" class="img-responsive" alt="Alt" title="NameImg" />
+											</a>
+										</div>
+										<!-- Middle -->
+										<div class="product-block">
+											<h3 class="product-title">
+												<a itemprop="url" href="#"><span itemprop="name">New balance</span></a>
+											</h3>
+											<div class="product-text clearfix">
+												<p itemprop="description">Adidas Superstar Foundation Ayakkabı </p>
+											</div>
+										</div>
+										<!-- Bottom -->
+										<div itemprop="offers" itemscope="" itemtype="https://schema.org/Offer" class="footer-price">
+											<span class="old-price">318tl</span>
+											<meta itemprop="priceCurrency" content="TRY">
+											<meta itemprop="price" content="217.5">
+											<span class="new-price">
+												<span itemprop="price" content="218">218</span>
+												<span itemprop="priceCurrency" content="TRY">tl</span>
+											</span>
+										</div>
+
+									</div>
+								</div>
+								<!-- İtem 2-->
+
+								<!-- İtem 3-->
+								<div itemscope itemprop="itemListElement" itemtype="https://schema.org/Product" class="products-item">
+									<div class="pr-slide-wrap">
+
+										<!-- Top -->
+										<div class="product-img-top">
+											<span class="sale">%25</span>
+											<a itemprop="url" href="#">
+												<img itemprop="image" src="img/section2/1.png" class="img-responsive" alt="Alt" title="NameImg" />
+											</a>
+										</div>
+										<!-- Middle -->
+										<div class="product-block">
+											<h3 class="product-title">
+												<a itemprop="url" href="#"><span itemprop="name">New balance</span></a>
+											</h3>
+											<div class="product-text clearfix">
+												<p itemprop="description">Adidas Superstar Foundation Ayakkabı </p>
+											</div>
+										</div>
+										<!-- Bottom -->
+										<div itemprop="offers" itemscope="" itemtype="https://schema.org/Offer" class="footer-price">
+											<span class="old-price">318tl</span>
+											<meta itemprop="priceCurrency" content="TRY">
+											<meta itemprop="price" content="217.5">
+											<span class="new-price">
+												<span itemprop="price" content="218">218</span>
+												<span itemprop="priceCurrency" content="TRY">tl</span>
+											</span>
+										</div>
+
+									</div>
+								</div>
+								<!-- İtem 3-->
+
+								<!-- İtem 4-->
+								<div itemscope itemprop="itemListElement" itemtype="https://schema.org/Product" class="products-item">
+									<div class="pr-slide-wrap">
+
+										<!-- Top -->
+										<div class="product-img-top">
+											<span class="sale">%25</span>
+											<a itemprop="url" href="#">
+												<img itemprop="image" src="img/section2/1.png" class="img-responsive" alt="Alt" title="NameImg" />
+											</a>
+										</div>
+										<!-- Middle -->
+										<div class="product-block">
+											<h3 class="product-title">
+												<a itemprop="url" href="#"><span itemprop="name">New balance</span></a>
+											</h3>
+											<div class="product-text clearfix">
+												<p itemprop="description">Adidas Superstar Foundation Ayakkabı </p>
+											</div>
+										</div>
+										<!-- Bottom -->
+										<div itemprop="offers" itemscope="" itemtype="https://schema.org/Offer" class="footer-price">
+											<span class="old-price">318tl</span>
+											<meta itemprop="priceCurrency" content="TRY">
+											<meta itemprop="price" content="217.5">
+											<span class="new-price">
+												<span itemprop="price" content="218">218</span>
+												<span itemprop="priceCurrency" content="TRY">tl</span>
+											</span>
+										</div>
+
+									</div>
+								</div>
+								<!-- İtem 4-->
+
+								<!-- İtem 5-->
+								<div itemscope itemprop="itemListElement" itemtype="https://schema.org/Product" class="products-item">
+									<div class="pr-slide-wrap">
+
+										<!-- Top -->
+										<div class="product-img-top">
+											<span class="sale">%25</span>
+											<a itemprop="url" href="#">
+												<img itemprop="image" src="img/section2/1.png" class="img-responsive" alt="Alt" title="NameImg" />
+											</a>
+										</div>
+										<!-- Middle -->
+										<div class="product-block">
+											<h3 class="product-title">
+												<a itemprop="url" href="#"><span itemprop="name">New balance</span></a>
+											</h3>
+											<div class="product-text clearfix">
+												<p itemprop="description">Adidas Superstar Foundation Ayakkabı </p>
+											</div>
+										</div>
+										<!-- Bottom -->
+										<div itemprop="offers" itemscope="" itemtype="https://schema.org/Offer" class="footer-price">
+											<span class="old-price">318tl</span>
+											<meta itemprop="priceCurrency" content="TRY">
+											<meta itemprop="price" content="217.5">
+											<span class="new-price">
+												<span itemprop="price" content="218">218</span>
+												<span itemprop="priceCurrency" content="TRY">tl</span>
+											</span>
+										</div>
+
+									</div>
+								</div>
+								<!-- İtem 5-->
+
+								<!-- İtem 6-->
+								<div itemscope itemprop="itemListElement" itemtype="https://schema.org/Product" class="products-item">
+									<div class="pr-slide-wrap">
+
+										<!-- Top -->
+										<div class="product-img-top">
+											<span class="sale">%25</span>
+											<a itemprop="url" href="#">
+												<img itemprop="image" src="img/section2/1.png" class="img-responsive" alt="Alt" title="NameImg" />
+											</a>
+										</div>
+										<!-- Middle -->
+										<div class="product-block">
+											<h3 class="product-title">
+												<a itemprop="url" href="#"><span itemprop="name">New balance</span></a>
+											</h3>
+											<div class="product-text clearfix">
+												<p itemprop="description">Adidas Superstar Foundation Ayakkabı </p>
+											</div>
+										</div>
+										<!-- Bottom -->
+										<div itemprop="offers" itemscope="" itemtype="https://schema.org/Offer" class="footer-price">
+											<span class="old-price">318tl</span>
+											<meta itemprop="priceCurrency" content="TRY">
+											<meta itemprop="price" content="217.5">
+											<span class="new-price">
+												<span itemprop="price" content="218">218</span>
+												<span itemprop="priceCurrency" content="TRY">tl</span>
+											</span>
+										</div>
+
+									</div>
+								</div>
+								<!-- İtem 6-->
+
+
+							</div>
+							<!-- /products-list -->
+						</div>
+						<!-- /slider-brands -->
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!-- Products (Special suggestion) The End -->
+
+		<!-- Discover Start -->
+		<section class="sect discover-sect">
+			<div class="container">
+
+				<div class="row clearfix">
+
+					<div class="discover-wrap col-sm-12">
+
+						<div class="discover">
+							<a rel="nofollow" href="#">
+								<figure class="discover-effect">
+									<img src="img/section1/1.png" alt="About">
+									<span class="btn discount-btn">Hemen  keşfet &#187; </span>
+								</figure>
+							</a>
+						</div>
+
+						<div class="discover">
+
+							<div class="discover-left">
+								<a rel="nofollow" href="#">
+									<figure class="discover-effect">
+										<img src="img/section1/2.png" alt="About">
+										<div class="discount-circle">
+											<b>%</b><span>25</span> <br> İNDİRİM
+										</div>
+										<span class="btn discount-btn">Hemen keşfet &#187;</span>
+									</figure>
+								</a>
+							</div>
+
+							<div class="discover-left">
+								<a rel="nofollow" href="#">
+									<figure class="discover-effect">
+										<img src="img/section1/3.png" alt="About">
+										<span class="herschel-logo"></span>
+										<span class="btn discount-btn l">Hemen keşfet &#187;</span>
+									</figure>
+								</a>
+							</div>
+
+						</div>
+
+					</div>
+					
+				</div>
+
+			</div>
+		</section>
+		<!-- Discover The End -->
+
+		<!-- Video SlideSHow -->
+		<section class="sect video-sect clearfix">
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-8 col-sm-12 col-xs-12">
+
+						<div class="video-slider">
+
+							<!-- Slide 1 -->
+							<div class="video-slider__slide">
+								<div class="video-youtube js-video"  data-youtube="OaIJmebfJPU">
+									<div class="video-loader"></div>
+									<img class="video__img" src="img/video-slideshow/sl2.jpg" alt="About" />
+									<button id="video__play" class="video__play" type="button"></button>
+								</div>
+							</div>
+
+							<!-- Slide 2 -->
+							<div class="video-slider__slide">
+								<div class="video-youtube js-video"  data-youtube="OaIJmebfJPU">
+									<div class="video-loader"></div>
+									<img class="video__img" src="img/video-slideshow/sl2.jpg" alt="About" />
+									<button id="video__play" class="video__play" type="button"></button>
+								</div>
+							</div>
+
+							<!-- Slide 3 -->
+							<div class="video-slider__slide">
+								<div class="video-youtube js-video"  data-youtube="OaIJmebfJPU">
+									<div class="video-loader"></div>
+									<img class="video__img" src="img/video-slideshow/sl2.jpg" alt="About" />
+									<button id="video__play" class="video__play" type="button"></button>
+								</div>
+							</div>
+
+							<!-- Slide 4 -->
+							<div class="video-slider__slide">
+								<div class="video-youtube js-video"  data-youtube="OaIJmebfJPU">
+									<div class="video-loader"></div>
+									<img class="video__img" src="img/video-slideshow/sl2.jpg" alt="About" />
+									<button id="video__play" class="video__play" type="button"></button>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="col-md-4 col-sm-12 col-xs-12 hidden-sm hidden-xs">
+
+						<div class="video-left">
+
+							<h2 class="video-title">Önerilen videolar</h2>
+
+							<div class="video-nav">
+
+								<div class="video-nav__slide">
+									<div class="video-nav-img">
+										<img class="img-responsive" src="img/video-slideshow/tabs/video-item.png" alt="About">
+									</div>
+									<h3><a href="#">İsyankar kedi: Aç kapıyı aç!</a></h3>
+									<ul>
+										<li>449 izleme</li>
+										<li><time class="info-time" datetime="2016-12-31 13:22:11" title="Friday, December 2, 2016 at 1:22 PM EST">3 ay önce</time></li>
+									</ul>
+								</div>
+
+								<div class="video-nav__slide">
+									<div class="video-nav-img">
+										<img class="img-responsive" src="img/video-slideshow/tabs/video-item.png" alt="About">
+									</div>
+									<h3><a href="#">İsyankar kedi: Aç kapıyı aç!</a></h3>
+									<ul>
+										<li>449 izleme</li>
+										<li><time class="info-time" datetime="2016-12-31 13:22:11" title="Friday, December 2, 2016 at 1:22 PM EST">3 ay önce</time></li>
+									</ul>
+								</div>
+
+								<div class="video-nav__slide">
+									<div class="video-nav-img">
+										<img class="img-responsive" src="img/video-slideshow/tabs/video-item.png" alt="About">
+									</div>
+									<h3><a href="#">İsyankar kedi: Aç kapıyı aç!</a></h3>
+									<ul>
+										<li>449 izleme</li>
+										<li><time class="info-time" datetime="2016-12-31 13:22:11" title="Friday, December 2, 2016 at 1:22 PM EST">3 ay önce</time></li>
+									</ul>
+								</div>
+
+								<div class="video-nav__slide">
+									<div class="video-nav-img">
+										<img class="img-responsive" src="img/video-slideshow/tabs/video-item.png" alt="About">
+									</div>
+									<h3><a href="#">İsyankar kedi: Aç kapıyı aç!</a></h3>
+									<ul>
+										<li>449 izleme</li>
+										<li><time class="info-time" datetime="2016-12-31 13:22:11" title="Friday, December 2, 2016 at 1:22 PM EST">3 ay önce</time></li>
+									</ul>
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+		<!-- Video SlideSHow -->
+
+		<!-- Popular Slideshow  -->
+		<section class="sec popular-brands">
+			<div class="container">
+
+				<div class="slider-products">
+					<div class="row">
+						<div class="col-md-12">
+							<h2 class="icon popular sect-title">EN ÇOK SATANLAR</h2>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+
+							<!-- products-list -->
+							<div class="products-list" id="popular-slide-list">
+
+								<!-- İtem 1-->
+								<div class="popular-item">
+
+									<div class="pr-slide-wrap">
+										<div class="product-img-top">
+											<a href="#"><img src="img/section2/1.png" class="img-responsive" alt="Alt"/></a>
+										</div>
+
+										<div class="product-block">									
+											<h3 class="product-title"><a href="#">New balance</a></h3>
+											<div class="product-text clearfix">
+												<p>Adidas Superstar Foundation Ayakkabı  hemen al </p>
+											</div>
+											<div class="footer-price">
+												<span class="old-price">318tl</span>
+												<span class="new-price">218tl</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- İtem 1-->
+
+								<!-- İtem 2-->
+								<div class="popular-item">
+
+									<div class="pr-slide-wrap">
+										<div class="product-img-top">
+											<a href="#"><img src="img/section2/2.png" class="img-responsive" alt="Alt"/></a>
+										</div>
+
+										<div class="product-block">									
+											<h3 class="product-title"><a href="#">New balance</a></h3>
+											<div class="product-text clearfix">
+												<p>Adidas Superstar Foundation Ayakkabı </p>
+											</div>
+											<div class="footer-price">
+												<span class="old-price">318tl</span>
+												<span class="new-price">218tl</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- İtem 2-->
+
+								<!-- İtem 3-->
+								<div class="popular-item">
+
+									<div class="pr-slide-wrap">
+										<div class="product-img-top">
+											<a href="#"><img src="img/section2/1.png" class="img-responsive" alt="Alt"/></a>
+										</div>
+
+										<div class="product-block">									
+											<h3 class="product-title"><a href="#">New balance</a></h3>
+											<div class="product-text clearfix">
+												<p>Adidas Superstar Foundation Ayakkabı  hemen al </p>
+											</div>
+											<div class="footer-price">
+												<span class="old-price">318tl</span>
+												<span class="new-price">218tl</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- İtem 3-->
+
+								<!-- İtem 4-->
+								<div class="popular-item">
+
+									<div class="pr-slide-wrap">
+										<div class="product-img-top">
+											<a href="#"><img src="img/section2/2.png" class="img-responsive" alt="Alt"/></a>
+										</div>
+
+										<div class="product-block">									
+											<h3 class="product-title"><a href="#">New balance</a></h3>
+											<div class="product-text clearfix">
+												<p>Adidas Superstar Foundation Ayakkabı </p>
+											</div>
+											<div class="footer-price">
+												<span class="old-price">318tl</span>
+												<span class="new-price">218tl</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- İtem 4-->
+
+								<!-- İtem 5-->
+								<div class="popular-item">
+
+									<div class="pr-slide-wrap">
+										<div class="product-img-top">
+											<a href="#"><img src="img/section2/1.png" class="img-responsive" alt="Alt"/></a>
+										</div>
+
+										<div class="product-block">									
+											<h3 class="product-title"><a href="#">New balance</a></h3>
+											<div class="product-text clearfix">
+												<p>Adidas Superstar Foundation Ayakkabı  hemen al </p>
+											</div>
+											<div class="footer-price">
+												<span class="old-price">318tl</span>
+												<span class="new-price">218tl</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- İtem 5-->
+
+								<!-- İtem 6-->
+								<div class="popular-item">
+
+									<div class="pr-slide-wrap">
+										<div class="product-img-top">
+											<a href="#"><img src="img/section2/2.png" class="img-responsive" alt="Alt"/></a>
+										</div>
+
+										<div class="product-block">									
+											<h3 class="product-title"><a href="#">New balance</a></h3>
+											<div class="product-text clearfix">
+												<p>Adidas Superstar Foundation Ayakkabı </p>
+											</div>
+											<div class="footer-price">
+												<span class="old-price">318tl</span>
+												<span class="new-price">218tl</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- İtem 6-->
+
+							</div>
+							<!-- /products-list -->
+						</div>
+						<!-- /slider-brands -->
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!-- Popular Slideshow  -->
+		<!-- Fixed footer The Start .wrapper>+.header+.push-->
+		<!-- <div class="push"></div> -->
+		<!-- Fixed footer The Start .wrapper>+.header+.push-->
+		<!-- Fixed footer -->
+
+		<!-- Full Descop -->
+		<section class="sect full-descop clearfix">
+			<div class="container">
+				<div class="row">
+					<div class="full-descop-center clearfix">
+						<div class="col-xs-12 superstep-blog-sect">
+							<h3><a href="#"><img src="img/superstep-blog.png" alt="Superstep Blog" class="img-responsive"></a></h3>
+						</div>
+						<div class="col-md-6 col-sm-6 ">
+							<img src="img/all-ekran.png" alt="Mobile" class="img-responsive">
+						</div>
+						<div class="col-md-6 col-sm-6">
+							<h3 class="hidden-xs"><a href="#"><img src="img/superstep-blog.png" alt="Superstep Blog" class="img-responsive"></a></h3>
+							<p>Nulla leo mauris, varius sed augue tempus, feugiat gravida quam. Etiam mollis mi orci. Vivamus fermentum vitae nunc id pharetra. Ut lobortis fringilla blandit. Sed id pulvinar lorem, interdum auctor arcu.</p>
+							<div class="btn-wrap">
+								<a href="#" class="btn btn-large">koleksiyonu keşfet</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Full Descop -->
+
+		<!-- Why Superstep start -->
+		<section class="why-superstep">
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-12">
+
+						<div class="card-content">
+
+							<div class="clearfix">
+								<h2 class="icon why-title">NEDEN SUPERSTEP?</h2>
+							</div>
+
+							<div class="clearfix">
+
+								<div class="card new-height">
+									<div class="card-icon">
+										<span class="why-icon credit-icon"></span>
+									</div>
+									<h3>KREDİ KARTIN <br> TAKSİT SEÇENEĞİ</h3>
+									<p>Tüm alışverişlerinizde siparişiniz Yurtiçi kargo ile ücretsiz gönderilmektedir.</p>
+								</div>
+
+								<div class="card new-height">
+									<div class="card-icon">
+										<span class="why-icon safe-icon"></span>
+									</div>
+									<h3>%100 GÜVENLİ <br>ÖDEME</h3>
+									<p>Sitemiz SSL sertifikası ile %100 güvenli alışveriş olanağı sağlamaktadır.</p>
+								</div>
+
+								<div class="card new-height">
+									<div class="card-icon">
+										<span class="why-icon origin-icon"></span>
+									</div>
+									<h3>ORJİNAL <br>ÜRÜN GARANTİSİ</h3>
+									<p>Tüm ürünler distribitör garantili ve Eren Perkande güvencesiyle satılmaktadır.</p>
+								</div>
+
+								<div class="card new-height">
+									<div class="card-icon">
+										<span class="why-icon return-icon"></span>
+									</div>
+									<h3>İADE <br> GARANTİSİ</h3>
+									<p>Memnun kalmadığınız ürünü 30 gün içerisinde ücretsiz iade edebilirsiniz.</p>
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="card-content">
+
+							<div class="card-content-left">
+
+								<div class="clearfix">
+									<h2 class="icon campaign-title">KAMPANYALARI VE FIRSATLARI KAÇIRMAYIN!</h2>
+								</div>
+
+								<div class="new-height  new-sletter">
+
+									<form action="Get" class="form-reg">
+
+										<p class="form-reg-title">SuperStep haberlerinden ve etkinliklerinden haberdar olmak için e-mailinizi giriniz...</p>
+
+										<fieldset class="form-reg-fset">
+											<legend>
+												<label class="form-reg-text"> <span>E-posta </span> üyeliği için </label>
+											</legend>
+											<input name="name" required="" type="text" placeholder="E-posta adresinizi giriniz..">
+											<input type="submit" value="Kayıt ol">
+
+										</fieldset>
+
+										<fieldset class="form-reg-fset">
+											<legend>
+												<label class="form-reg-text"><span>Sms</span> üyeliği için</label>
+											</legend>
+											<input name="phone" required="" type="tel" placeholder="Telefon numaranızı giriniz...">
+											<input type="submit" value="Kayıt ol">
+
+										</fieldset>
+
+									</form>
+
+								</div>
+
+								<div class="contacts-main new-height">
+
+									<h2 class="icon call-center-icon">MÜŞTERİ HİZMETLERİ</h2>
+
+									<div itemscope itemtype="https://schema.org/Organization">
+										<div class="contacts clearfix">
+											<a href="tel://444 37 36" class="icon c-icon tel-icon"><span itemprop="telephone">444 37 36 (444 EREN)</span></a>
+											<a href="mailto:mh@superstep.com.tr" class="icon c-icon  email-icon"><span itemprop="email">mh@superstep.com.tr</span></a>
+										</div>
+										
+										<h2 class="icon adress-title">İADE ADRES BİLGİLERİ</h2>
+										<address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress" class="icon adress-icon">
+											<p>
+												<span itemprop="streetAddress">Mahmutbey mah Ordu cad. No:52 </span>
+												<span itemprop="postalCode">34197</span>
+												<span itemprop="addressLocality">Bağcılar  İstanbul Türkiye	OCCASION MAHMUTBEY / İSTANBUL</span>
+											</p>
+										</address>
+									</div>
+
+								</div>
+							</div>
+
+
+						</div>
+
+					</div>
+				</div>
+
+
+
+			</div>
+		</section>
+		<!-- Why Superstep the end-->
+
+		<!-- Footer start -->
+		<footer class="footer" itemscope="" itemtype="https://schema.org/WPFooter">
+			<div class="footer-top">
+				<div class="container">
+					<div class="footer-center">
+						<div class="row">
+							<div class="col-md-2 col-sm-6 col-xs-12">
+								<h4>HESAP BİLGİLERİ</h4>
+								<ul>
+									<li><a rel="nofollow" href="#">Üyelik Bilgilerim</a></li>
+									<li><a rel="nofollow" href="#">Sepetim</a></li>
+									<li><a rel="nofollow" href="#">Siparişlerim</a></li>
+									<li><a rel="nofollow" href="#">Adreslerim</a></li>
+									<li><a rel="nofollow" href="#">Favorileri Ürünlerim</a></li>
+									<li><a rel="nofollow" href="#">Şifre Değiştir</a></li>
+								</ul>
+							</div>
+							<div class="col-md-2 col-sm-6 col-xs-12">
+								<h4>MÜŞTERİ HİZMETLERİ</h4>
+								<ul>
+									<li><a rel="nofollow" href="#">İletişim</a></li>
+									<li><a rel="nofollow" href="#">Sık Sorulan Sorular</a></li>
+									<li><a rel="nofollow" href="#">Kullanım Şartları</a></li>
+									<li><a rel="nofollow" href="#">Gizlilik ve Güvenlik</a></li>
+								</ul>
+							</div>
+							<div class="col-md-2 col-sm-6 col-xs-12">
+								<h4>KURUMSAL</h4>
+								<ul>
+									<li><a rel="nofollow" href="#">Hakkımızda</a></li>
+								</ul>
+							</div>
+
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<h4>BLOG</h4>
+								<div class="footer-blogs-logo">
+									<a href="#"><img src="img/footer-link-superste.png" alt="Superstep"></a>
+									<a href="#"><img src="img/footer-link-localhoste.png" alt="Lacoste"></a>
+								</div>
+								<ul>
+									<li><a rel="nofollow" href="#">blog.superstep.com.tr</a></li>
+									<li><a rel="nofollow" href="#">blog.lacoste.com.tr</a></li>
+								</ul>
+							</div>
+
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<h4>SOSYAL MEDYA</h4>
+								<div class="social-sprite">
+									<a rel="nofollow" href="#">facebook.com/SuperStepTR</a>
+									<a rel="nofollow" href="#">instagram.com/superstepcom</a>
+									<a rel="nofollow" href="#">twitter.com/SuperStepTR</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-sm-4 col-xs-6">
+							<a href="#" class="footer-bottom-logo">
+								<img src="img/footer-logo.png" alt="Logo Footer">
+							</a>
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-6">
+							<p class="copyright">
+								&copy; Copyright
+								<span itemprop="copyrightYear">2016</span>
+								<meta itemprop="copyrightHolder" content="Интернет-mağazası Superstep">
+								<span itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person">
+									<span itemprop="name">Superstep</span>
+								</span>.
+							</p>
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-12">
+							<div class="bank-cart">
+								<img src="img/cart-sprites.png" alt="Bank kart">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="top"><img src="img/yukari.png" alt=""></div>
+		</footer>
+		<!-- Footer the end-->
+
+	<!--[if lt IE 9]>
+		<script src="libs/html5shiv/es5-shim.min.js"></script>
+		<script src="libs/html5shiv/html5shiv.min.js"></script>
+		<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+		<script src="libs/respond/respond.min.js"></script>
+		<![endif]-->
+
+
+
+		<script src="js/scripts.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('.y-slide').yummySlide({
+					mode: 'normal',
+					direction: 'vertical',
+					loop: true
+				});
+			});
+		</script>
+	</body>
+	</html>
+	

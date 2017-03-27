@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Ana Sayfa</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<link rel="stylesheet" href="css/header.min.css">
+	<link rel="stylesheet" href="css/markalar.min.css">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+</head>
+
+<body>
+
+	<div class="container">
+	
+		<div class="message">
+			<div class="height"> </div>
+			<div class="scroll"></div>
+			<div class="bottom"></div>
+		</div>
+
+
+		<div class="list">
+			<div class="element element-in"><img src="http://placehold.it/190x100"/></div>
+			<div class="element element-in"><img src="http://placehold.it/190x100"/></div>
+			<div class="element element-in"><img src="http://placehold.it/190x100"/></div>
+			<div class="element element-in"><img src="http://placehold.it/190x100"/></div>
+			<div class="element element-in"><img src="http://placehold.it/190x100"/></div>
+			<div class="element element-in"><img src="http://placehold.it/190x100"/></div>
+			<div class="element element-in"><img src="http://placehold.it/190x100"/></div>
+			<div class="element element-in"><img src="http://placehold.it/190x100"/></div>
+			<div class="element element-in"><img src="http://placehold.it/190x100"/></div>
+			<div class="element element-in"><img src="http://placehold.it/190x100"/></div>
+			<div class="element element-in"><img src="http://placehold.it/190x100"/></div>
+			<div class="element element-in"><img src="http://placehold.it/190x100"/></div>
+			<div class="element element-in"><img src="http://placehold.it/190x100"/></div>
+			<div class="element element-in"><img src="http://placehold.it/190x100"/></div>
+			<div class="element element-in"><img src="http://placehold.it/190x100"/></div>
+			<div class="element element-in"><img src="http://placehold.it/190x100"/></div>
+			<div class="element element-in"><img src="http://placehold.it/190x100"/></div>
+			<div class="element element-in"><img src="http://placehold.it/190x100"/></div>
+			<div class="element element-in"><img src="http://placehold.it/190x100"/></div>
+			<div class="element element-in"><img src="http://placehold.it/190x100"/></div>
+			<div class="element element-in"><img src="http://placehold.it/190x100"/></div>
+			<div class="element element-in"><img src="http://placehold.it/190x100"/></div>
+			<div class="element element-in"><img src="http://placehold.it/190x100"/></div>
+			<div class="element element-in"><img src="http://placehold.it/190x100"/></div>
+			<div class="element element-in"><img src="http://placehold.it/190x100"/></div>
+			<div class="element element-in"><img src="http://placehold.it/190x100"/></div>
+			<div class="element element-in"><img src="http://placehold.it/190x100"/></div>
+		</div>
+		<div class="load-more is-hidden">Load more</div>
+
+
+		<div class="hidden-content is-hidden">
+			<div class="element"><img src="http://placehold.it/190x100/333333"/></div>
+			<div class="element"><img src="http://placehold.it/190x100/333333"/></div>
+			<div class="element"><img src="http://placehold.it/190x100/333333"/></div>
+			<div class="element"><img src="http://placehold.it/190x100/333333"/></div>
+			<div class="element"><img src="http://placehold.it/190x100/333333"/></div>
+			<div class="element"><img src="http://placehold.it/190x100/333333"/></div>
+		</div>
+
+
+
+	</div>
+
+
+	<script src="js/scripts.min.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			var infiniteScrolling = (function() {
+				'use strict';
+
+				var limit = 0,
+				counter = 0,
+				$loading;
+
+				function scrollTo(offset){
+
+					$(window).scrollTop(offset);
+
+				}
+
+				function loadMore() {
+
+					$('.list').after( $loading );
+					$(document).off('scroll', scrollController);
+					$('.load-more').addClass('is-hidden');
+
+					setTimeout(function(){
+
+						$loading.remove();
+						$('.list').append( $('.hidden-content').html() );
+
+						$('.list').find('.element').not('.element-in').each(function(i){
+
+							var $this = $(this);
+
+							setTimeout(function(){
+
+								requestAnimationFrame( function(){ $this.addClass('element-in') } )
+
+							}, ( 100 * Math.ceil( (i+1)/3 )) )
+
+						})
+
+						$('.message .bottom').text( $('.list').height() );
+
+						$(document).on('scroll touchmove', scrollController);
+
+						if( counter == limit ){
+
+							$('.load-more').removeClass('is-hidden');
+
+						}
+					}, 400);
+
+
+				}
+
+				function scrollController() {
+
+					$('.message .scroll').text( $(window).scrollTop() );
+
+					if( $(window).scrollTop() + $(window).height() >=  $('.list').height() && counter < limit ){
+
+						$('.message').addClass('ok');
+						loadMore();
+						counter+=1;
+
+						return;
+
+					} 
+
+					$('.message').removeClass('ok');
+
+
+				}
+
+				function bindUI() {
+
+					$(document).on('scroll', scrollController);
+
+
+					$('.load-more').on('click', loadMore);
+
+				}
+
+				function init(limite) {
+
+					limit = limite;
+
+					bindUI();
+
+					$('.message .bottom').text( $('.list').height() );
+					$('.message .height').text($(window).height());
+
+					$loading = $('<div class="loading">Loading</div>');
+
+				}
+
+				return {
+					init:init
+				};
+
+			}());
+
+			$(function(){
+
+				infiniteScrolling.init( 6 );
+
+			})
+		});
+	</script>
+
+</body>
+</html>

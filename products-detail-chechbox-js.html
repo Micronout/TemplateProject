@@ -1,0 +1,696 @@
+		<!DOCTYPE html>
+
+		<html lang="tr"> 
+
+		<head>
+
+			<meta charset="utf-8">
+
+			<title>Ana Sayfa</title>
+			<meta name="description" content="">
+
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+			<meta property="og:image" content="path/to/image.jpg">
+			<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+			<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+			<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+			<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+			<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+			<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)};function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n};function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+			<!-- Load Fonts CSS Start -->
+			<script>
+				loadCSS( "css/fonts.min.css?ver=1.0.0", false, "all" ); // Loading fonts, if the site is located in a subfolder
+				// loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" ); // Loading fonts, if the site is at the root
+			</script>
+			<!-- Load Fonts CSS End -->
+
+			<link rel="stylesheet" href="css/header.min.css">
+			<link rel="stylesheet" href="css/h-media.min.css">
+			<link rel="stylesheet" href="css/breadcrumb.min.css">
+			<link rel="stylesheet" href="css/products-detail.min.css">
+			<link rel="stylesheet" href="css/main-bottom.min.css">
+			<!-- <link rel="stylesheet" href="css/fonts.min.css"> -->
+
+			<!-- Chrome, Firefox OS and Opera -->
+			<meta name="theme-color" content="#000">
+			<!-- Windows Phone -->
+			<meta name="msapplication-navbutton-color" content="#000">
+			<!-- iOS Safari -->
+			<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+		</head>
+
+		<body >
+			
+			<header class="page-header">
+
+				<div class="header-top">
+					<div class="container">
+
+						<div class="row">
+							<a href="#" class="open-mobile-menu">
+								<i class="icon-list"></i>
+							</a>
+
+
+							<div class="col-md-3 col-sm-5 col-xs-12">
+								<a href="index.html" class="logo">
+									<img src="img/logo.png" alt="Superstep" class="logo__picture">
+								</a>
+							</div>
+
+							<div class="col-md-5 col-sm-5 col-xs-12 header-search-column">
+								<div class="header-search">
+									<form class="header-form">
+										<input class="search-input" type="text" name="search" placeholder="Dünya markalarını keşfet">
+										<button class="btn" type="submit"></button>
+									</form>
+								</div>
+							</div>
+							
+							<div class="col-md-4 header-user-menu">
+								<ul class="clearfix pull-right">
+									<li class="register-login">
+										<a href="#" class="toggle-login">
+											<img src="img/header/user.png" alt="">
+										</a>
+										<ul class="register-in clearfix">
+											<li>
+												<a href="#"><span>üye ol</span></a>
+											</li>
+											<li>
+												<a href="#"><span>üye girişi</span></a>
+											</li>
+										</ul>
+									</li>
+
+									<li class="basket">
+										<a href="#" class="basket-link">
+											<span>Sepetim</span>
+											<b class="basket-count">
+												<em>(</em><span>0</span><em>)</em>
+											</b>
+										</a>
+									</li>
+
+								</ul>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+				<div class="header-menu clearfix">
+					<div class="container">
+						<div class="row clearfix">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<nav class="menu">
+									<ul class="menu__list clearfix">
+										<li class="menu__item"><a href="brands.html" class="menu__link menu__link--active">Markalar</a></li>
+										<li class="menu__item"><a href="index2.html" class="menu__link">erkek</a></li>
+										<li class="menu__item"><a href="index3.html" class="menu__link">kadın</a></li>
+										<li class="menu__item"><a href="products-list.html" class="menu__link">liste</a></li>
+										<li class="menu__item"><a href="#" class="menu__link icon new-season">yeni sezon</a></li>
+										<li class="menu__item "><a href="#" class="menu__link icon discount">indirim</a></li>
+										<li class="menu__item mg"><a href="#" class="menu__link">mağazalar</a></li>
+										<li class="menu__item bl"><a href="#" class="menu__link icon blog">Blog</a></li>
+										<li class="menu__item header-brand">
+											<div class="header-brand__link"><img src="img/converse-logo.png" alt="Alt"></div>
+										</li>
+										<li class="menu__item header-brand kd brnone">
+											<div class="header-brand__link"><img src="img/keds-logo.png" alt="Alt"></div>
+										</li>
+									</ul>
+								</nav>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</header>
+			<!-- breadcrumb start -->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-xs-12">
+						<div class="clearfix">
+							<div class="breadcrumb fitre-row">
+								<ul class="breadcrumb-list clearfix">
+									<li><a href="#">Erkek </a></li>
+									<li><a href="#">Günlük</a></li>
+									<li><a href="#">Ayakkabı</a></li>
+									<li class="active"><a href="#">Modelleri</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!-- /breadcrumb -->
+
+			<!-- Products detailc --> 
+			<section class="sect">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-md-7 col-sm-7 col-xs-12">
+							<div class="row">
+								<div class="col-md-10 col-md-push-2 col-sm-12 col-xs-12">
+									<div class="zoom-slider">
+										<div class="zoom-slider__item"><img src="img/zoom-slider/big/1.jpg" alt=""></div>
+										<div class="zoom-slider__item"><img src="img/zoom-slider/big/1.jpg" alt=""></div>
+										<div class="zoom-slider__item"><img src="img/zoom-slider/big/1.jpg" alt=""></div>
+										<div class="zoom-slider__item"><img src="img/zoom-slider/big/1.jpg" alt=""></div>
+									</div>
+								</div>
+								<div class="col-md-2 col-md-pull-10 col-sm-12 col-xs-12">
+									<div class="zoom-slider-nav-wrap">
+										<div class="zoom-slider-nav">
+											<div class="zoom-slider-nav__item"><figure><img src="img/zoom-slider/mini/1.png" alt=""></figure></div>
+											<div class="zoom-slider-nav__item"><figure><img src="img/zoom-slider/mini/2.png" alt=""></figure></div>
+											<div class="zoom-slider-nav__item"><figure><img src="img/zoom-slider/mini/3.png" alt=""></figure></div>
+											<div class="zoom-slider-nav__item"><figure><img src="img/zoom-slider/mini/4.png" alt=""></figure></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-5 col-sm-5 col-xs-12">
+							<div class="row">
+								<div class="about-detail clearfix">
+									<div class="col-md-10">
+										<h1 class="detail-title">GStar Gstar Aver Mono Ayakkabı</h1>
+										<p class="detail-number">Model Numarası :<span> D03269.990</span></p>
+										
+										<div class="detail-sale">
+											<span class="sales">&#x20BA; <del class="old-sales">399,00</del></span>
+											<span class="sales">&#x20BA; <span class="new-sales">249,00</span></span>
+										</div>
+
+									</div>
+									<div class="col-md-2">
+										<ul class="social-vertical">
+											<li class="social-item">
+												<a href="#"></a>
+											</li>
+											<li class="social-item">
+												<a href="#"></a>
+											</li>
+											<li class="social-item">
+												<a href="#"></a>
+											</li>
+										</ul>
+									</div>
+
+									<div class="col-md-12">
+										<div class="select-color select-btm">
+											<h2 class="select-title">Renk: </h2>
+											<ul class="select-color-list">
+												<li class="active"><a href="javascript:void(0)"><img src="img/Color-img/1.png" alt=""></a></a></li>
+												<li><a href="javascript:void(0)"><img src="img/color-img/1.png" alt=""></a></li>
+												<li><a href="javascript:void(0)"><img src="img/color-img/2.png" alt=""></a></a></li>
+												<li><a href="javascript:void(0)"><img src="img/color-img/3.png" alt=""></a></a></li>
+												<li><a href="javascript:void(0)"><img src="img/color-img/4.png" alt=""></a></a></li>
+											</ul>
+										</div>
+									</div>
+									
+									<div class="col-md-12">
+										<div class="select-size select-btm clearfix">
+
+											<h2 class="select-title">Beden: </h2>
+
+											<div class="select-size-list">
+
+												<div class="radio size-block">
+													<input id="size-22" class="radio-input" type="radio" name="radio">
+													<label for="size-22" class="radio-label">
+														<span class="radio-text">40</span>
+													</label>
+												</div>
+
+												<div class="radio size-block">
+													<input id="size-23" class="radio-input" type="radio" name="radio">
+													<label for="size-23" class="radio-label">
+														<span class="radio-text">40</span>
+													</label>
+												</div>
+
+												<div class="radio size-block">
+													<input id="size-24" class="radio-input" type="radio" name="radio">
+													<label for="size-24" class="radio-label">
+														<span class="radio-text">40</span>
+													</label>
+												</div>
+
+												<div class="size-block active">
+													<input type="radio" id="size-1"  class="hidden" checked >
+													<label for="size-1">
+														<span>40</span>
+													</label>
+												</div>
+
+												<div class="size-block">
+													<input type="radio" id="size-2"  class="hidden">
+													<label for="size-2">
+														<span>41</span>
+													</label>
+												</div>
+
+												<div class="size-block">
+													<input type="radio" id="size-3"  class="hidden">
+													<label for="size-3">
+														<span>43</span>
+													</label>
+												</div>
+
+												<div class="size-block">
+													<input type="radio" id="size-4"  class="hidden">
+													<label for="size-4">
+														<span>44</span>
+													</label>
+												</div>
+
+												<div class="size-block size-hide">
+													<input type="radio" id="size-5"  class="hidden" disabled>
+													<label for="size-5">
+														<span>45</span>
+													</label>
+												</div>
+
+
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<h2 class="select-title">Beden: </h2>
+									</div>
+									
+									<div class="col-md-12">
+										<button>121</button>
+										<button>65656</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="row">
+
+						<div class="col-sm-4 col-sm-push-8 col-xs-12">11</div>
+
+						<div class="col-sm-7 col-sm-pull-4 col-xs-12">
+
+							<div class="slider-products">
+
+								<div class="row">
+									<div class="col-md-2"></div>
+									<div class="col-md-12">
+										<h2 class="icon sect-title special ">SİZE ÖZEL ÖNERİLERİNİZ</h2>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-2"></div>
+
+									<div class="col-md-10">
+
+										<div class="products-nav row">
+											<div class="nav p"></div>
+											<div class="nav n"></div>
+										</div>
+
+										<!-- products-list -->
+										<div class="products-list" id="products-detail">
+
+											<!-- İtem 1-->
+											<div class="products-item">
+
+												<div class="pr-slide-wrap">
+													<div class="product-img-top">
+														<a href="#"><img src="img/section2/1.png" class="img-responsive" alt="Alt"/></a>
+														<div class="sale">%25</div>
+													</div>
+
+													<div class="product-block">									
+														<h3 class="product-title"><a href="#">New balance</a></h3>
+														<div class="product-text clearfix">
+															<p>Adidas Superstar Foundation Ayakkabı </p>
+														</div>
+													</div>
+													<div class="footer-price">
+														<span class="price">318tl</span>
+														<span class="new-price">218tl</span>
+													</div>
+												</div>
+											</div>
+
+											<!-- İtem 2-->
+											<div class="products-item">
+
+												<div class="pr-slide-wrap">
+													<div class="product-img-top">
+														<a href="#"><img src="img/section2/2.png" class="img-responsive" alt="Alt"/></a>
+														<div class="sale">%25</div>
+													</div>
+
+													<div class="product-block">									
+														<h3 class="product-title"><a href="#">New balance</a></h3>
+														<div class="product-text clearfix">
+															<p>Adidas Superstar Foundation Ayakkabı </p>
+														</div>
+
+													</div>
+													<div class="footer-price">
+														<span class="price">318tl</span>
+														<span class="new-price">218tl</span>
+													</div>
+												</div>
+											</div>
+
+											<!-- İtem 3-->
+											<div class="products-item">
+
+												<div class="pr-slide-wrap">
+													<div class="product-img-top">
+														<a href="#"><img src="img/section2/3.png" class="img-responsive" alt="Alt"/></a>
+														<div class="sale">%25</div>
+													</div>
+
+													<div class="product-block">									
+														<h3 class="product-title"><a href="#">adidas</a></h3>
+														<div class="product-text clearfix">
+															<p>Adidas Superstar Foundation Ayakkabı</p>
+														</div>
+														<div class="footer-price">
+															<span class="price">318tl</span>
+															<span class="new-price">218tl</span>
+														</div>
+													</div>
+												</div>
+
+											</div>
+
+											<!-- İtem 4-->
+											<div class="products-item">
+
+												<div class="pr-slide-wrap">
+													<div class="product-img-top">
+														<a href="#"><img src="img/section2/4.png" class="img-responsive" alt="Alt"/></a>
+														<div class="sale">%25</div>
+													</div>
+
+													<div class="product-block">									
+														<h3 class="product-title"><a href="#">New balance</a></h3>
+														<div class="product-text clearfix">
+															<p>Adidas Superstar Foundation Ayakkabı </p>
+														</div>
+														<div class="footer-price">
+															<span class="price">348tl</span>
+															<span class="new-price">248tl</span>
+														</div>
+													</div>
+												</div>
+
+											</div>
+
+											<!-- İtem 5-->
+											<div class="products-item">
+
+												<div class="pr-slide-wrap">
+													<div class="product-img-top">
+														<a href="#"><img src="img/section2/4.png" class="img-responsive" alt="Alt"/></a>
+														<div class="sale">%25</div>
+													</div>
+
+													<div class="product-block">									
+														<h3 class="product-title"><a href="#">New balance</a></h3>
+														<div class="product-text clearfix">
+															<p>Adidas Superstar Foundation Ayakkabı </p>
+														</div>
+														<div class="footer-price">
+															<span class="price">348tl</span>
+															<span class="new-price">248tl</span>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<!-- İtem 6-->
+											<div class="products-item">
+
+												<div class="pr-slide-wrap">
+													<div class="product-img-top">
+														<a href="#"><img src="img/section2/4.png" class="img-responsive" alt="Alt"/></a>
+														<div class="sale">%25</div>
+													</div>
+
+													<div class="product-block">									
+														<h3 class="product-title"><a href="#">New balance</a></h3>
+														<div class="product-text clearfix">
+															<p>Adidas Superstar Foundation Ayakkabı </p>
+														</div>
+														<div class="footer-price">
+															<span class="price">348tl</span>
+															<span class="new-price">248tl</span>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<!-- /products-list -->
+									</div>
+									<!-- /slider-brands -->
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+
+			<!-- Why Superstep start -->
+			<section class="why-superstep">
+				<div class="container">
+					<div class="row">
+
+
+						<div class="col-sm-12">
+							<h2 class="icon why-title">NEDEN SUPERSTEP?</h2>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-12 c-mb">
+							<div class="card new-height c-1">
+								<div class="card-icon">
+									<span class="why-icon credit-icon"></span>
+								</div>
+								<h3>KREDİ KARTIN <br> TAKSİT SEÇENEĞİ</h3>
+								<p>Tüm alışverişlerinizde siparişiniz Yurtiçi kargo ile ücretsiz gönderilmektedir.</p>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-12 c-mb">
+							<div class="card new-height c-2">
+								<div class="card-icon">
+									<span class="why-icon safe-icon"></span>
+								</div>
+								<h3>%100 GÜVENLİ <br>ÖDEME</h3>
+								<p>Sitemiz SSL sertifikası ile %100 güvenli alışveriş olanağı sağlamaktadır.</p>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-12 c-mb">
+							<div class="card new-height c-3">
+								<div class="card-icon">
+									<span class="why-icon origin-icon"></span>
+								</div>
+								<h3>ORJİNAL <br>ÜRÜN GARANTİSİ</h3>
+								<p>Tüm ürünler distribitör garantili ve Eren Perkande güvencesiyle satılmaktadır.</p>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-12 c-mb">
+							<div class="card new-height c-4">
+								<div class="card-icon">
+									<span class="why-icon return-icon"></span>
+								</div>
+								<h3>İADE <br> GARANTİSİ</h3>
+								<p>Memnun kalmadığınız ürünü 30 gün içerisinde ücretsiz iade edebilirsiniz.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Why Campaign Section start -->
+			<section class="campaign-sect">
+				<div class="container">
+
+					<div class="row">
+
+						<div class="col-sm-12">
+							<h2 class="icon campaign-title sect">KAMPANYALARI VE FIRSATLARI KAÇIRMAYIN!</h2>
+						</div>
+
+						<div class="col-md-6 col-sm-12 col-xs-12">
+
+							<div class="new-height new-sletter">
+
+								<form action="Get" class="form-reg">
+
+									<p class="form-reg-title">SuperStep haberlerinden ve etkinliklerinden haberdar olmak için e-mailinizi giriniz...</p>
+
+									<fieldset class="form-reg-fset">
+										<legend>
+											<label class="form-reg-text"> <span>E-posta </span> üyeliği için </label>
+										</legend>
+										<input name="name" required="" type="text" placeholder="E-posta adresinizi giriniz..">
+										<input type="submit" value="Kayıt ol">
+
+									</fieldset>
+
+									<fieldset class="form-reg-fset">
+										<legend>
+											<label class="form-reg-text"><span>Sms</span> üyeliği için</label>
+										</legend>
+										<input name="phone" required="" type="tel" placeholder="Telefon numaranızı giriniz...">
+										<input type="submit" value="Kayıt ol">
+
+									</fieldset>
+
+								</form>
+
+							</div>
+						</div>
+
+						<div class="col-md-6 col-sm-12 col-xs-12">
+							<div class="contacts-main new-height">
+
+								<h2 class="icon call-center-icon">MÜŞTERİ HİZMETLERİ</h2>
+								<div class="contacts clearfix">
+									<a href="tel://444 37 36" class="icon c-icon tel-icon">444 37 36 (444 EREN)</a>
+									<!-- <a href="callto://444 37 36" class="icon c-icon tel-icon">Merve Perakende (Skype)</a> -->
+									<a href="mailto:mh@superstep.com.tr" class="icon c-icon  email-icon">mh@superstep.com.tr</a>
+									<!-- Skype -->
+									<!-- <a href="callto:444 37 36" class="tel">444 37 36 (444 EREN)</a> -->
+								</div>
+
+								<h2 class="icon adress-title">İADE ADRES BİLGİLERİ</h2>
+								<address class="icon adress-icon">
+									<p>Mahmutbey mah Ordu cad. No:52 Bağcılar 34197 İstanbul Türkiye	OCCASION MAHMUTBEY / İSTANBUL</p>
+								</address>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<!-- Why Superstep the end-->
+
+			<!-- Footer start -->
+			<footer class="footer">
+				<div class="footer-top">
+					<div class="container">
+						<div class="footer-center">
+							<div class="row">
+								<div class="col-md-2 col-sm-6 col-xs-12">
+									<h4>HESAP BİLGİLERİ</h4>
+									<ul>
+										<li><a href="#">Üyelik Bilgilerim</a></li>
+										<li><a href="#">Sepetim</a></li>
+										<li><a href="#">Siparişlerim</a></li>
+										<li><a href="#">Adreslerim</a></li>
+										<li><a href="#">Favorileri Ürünlerim</a></li>
+										<li><a href="#">Şifre Değiştir</a></li>
+									</ul>
+								</div>
+								<div class="col-md-2 col-sm-6 col-xs-12">
+									<h4>MÜŞTERİ HİZMETLERİ</h4>
+									<ul>
+										<li><a href="#">İletişim</a></li>
+										<li><a href="#">Sık Sorulan Sorular</a></li>
+										<li><a href="#">Kullanım Şartları</a></li>
+										<li><a href="#">Gizlilik ve Güvenlik</a></li>
+									</ul>
+								</div>
+								<div class="col-md-2 col-sm-6 col-xs-12">
+									<h4>KURUMSAL</h4>
+									<ul>
+										<li><a href="#">Hakkımızda</a></li>
+									</ul>
+								</div>
+
+								<div class="col-md-3 col-sm-6 col-xs-12">
+									<h4>BLOG</h4>
+									<div class="footer-blogs-logo">
+										<a href="#"><img src="img/footer-link-superste.png" alt="Superstep"></a>
+										<a href="#"><img src="img/footer-link-localhoste.png" alt="Lacoste"></a>
+									</div>
+									<ul>
+										<li><a href="#">blog.superstep.com.tr</a></li>
+										<li><a href="#">blog.lacoste.com.tr</a></li>
+									</ul>
+								</div>
+
+								<div class="col-md-3 col-sm-6 col-xs-12">
+									<h4>SOSYAL MEDYA</h4>
+									<div class="social-sprite">
+										<a href="#">facebook.com/SuperStepTR</a>
+										<a href="#">instagram.com/superstepcom</a>
+										<a href="#">twitter.com/SuperStepTR</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-4 col-sm-4 col-xs-6">
+								<a href="#" class="footer-bottom-logo">
+									<img src="img/footer-logo.png" alt="Logo Footer">
+								</a>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-6">
+								<p>© Copyright 2016  superstep.com.  Tüm hakları saklıdır.</p>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-12">
+								<div class="bank-cart">
+									<img src="img/cart-sprites.png" alt="Bank kart">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="top"><img src="img/yukari.png" alt=""></div>
+			</footer>
+			<!-- Footer the end-->
+
+		<!--[if lt IE 9]>
+			<script src="libs/html5shiv/es5-shim.min.js"></script>
+			<script src="libs/html5shiv/html5shiv.min.js"></script>
+			<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+			<script src="libs/respond/respond.min.js"></script>
+			<![endif]-->
+
+
+
+			<script src="js/scripts.min.js"></script>
+
+		</body>
+		</html>
+

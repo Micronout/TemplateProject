@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- МЕТА --> 
+	<title>Register</title> 
+	<meta name="description" content="maximum 155 karakter" /> 
+	<meta name="Keywords" content="меtа-taglar, şablon, html, css">
+	<!-- open graph Facebook--> 
+	<meta property="og:title" content="Başlık" /> 
+	<meta property="og:type" content="website" /> 
+
+	<!-- Eğer site çok dilde ise --> 
+	<!-- <meta property="og:locale" content="ru_RU"> --> 
+	<meta property="og:url" content="http://localhost.my" /> 
+	<!-- Min 600х315, maksimum 8Мb --> 
+	<meta property="og:image" content="http://localhost.my/img/og_cover.jpg" /> 
+	<meta property="og:description" content="Açıklama 155 karakter fazla olmayacak" /> 
+	<meta property="fb:admins" content="Facebook ID" />
+
+	<!-- Twitter --> 
+	<meta name="twitter:card" content="summary_large_image"> 
+	<meta name="twitter:site" content="@şirketinize__ait__twitter__nik"> 
+	<meta name="twitter:title" content="Başlık"> 
+	<meta name="twitter:description" content="Açıklama 155 karakter fazla olmayacak"> 
+	<meta name="twitter:creator" content="@twitter__nik">
+
+	<!-- Resim boyutları min 280х150, max 1Мб --> 
+	<meta name="twitter:image" content="http://localhost.my/img/tw_cover.jpg"> 
+
+	<!-- G+ / Pinterest --> 
+	<meta itemprop="name" content="Başlık"> 
+	<meta itemprop="description" content="Açıklama 155 karakter fazla olmayacak"> 
+	<meta itemprop="image" content="http://localhost.my/img/g_cover.jpg"> 
+
+	<!-- Google authorship --> 
+	<link rel="author" href="https://plus.google.com/[Google+_Profile]/posts"/> 
+	<link rel="publisher" href="https://plus.google.com/[Google+_Page_Profile]"/> 
+
+	<!-- Favicons and icons for websites --> 
+	<!-- For new browsers - multisize ico -->
+	<link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="favicon.ico">
+	<!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicon-152.png">
+	<!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon-144.png">
+	<!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicon-120.png">
+	<!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon-114.png">
+	<!-- For iPhone 6+ -->
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="favicon-180.png">
+	<!-- For first- and second-generation iPad: -->
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon-72.png">
+	<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+	<link rel="apple-touch-icon-precomposed" href="favicon-57.png">
+	<!-- For Old Chrome -->
+	<link rel="icon" href="favicon-32.png" sizes="32x32">
+	<!-- For IE10 Metro -->
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="favicon-144.png">
+	<!-- Chrome for Android -->
+	<link rel="icon" sizes="192x192" href="favicon-192.png">
+
+	<!-- Chrome, Firefox OS and Opera --> 
+	<meta name="theme-color" content="#4285f4" />
+	<!-- Windows Phone --> 
+	<meta name="msapplication-navbutton-color" content="#4285f4" /> 
+	<!-- iOS Safari --> 
+	<meta name="apple-mobile-web-app-capable" content="yes" /> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-transcluent" /> 
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)};function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n};function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+	<!-- Load Fonts CSS Start -->
+	<script>
+		loadCSS( "css/fonts.min.css?ver=1.0.0", false, "all" ); // Loading fonts, if the site is located in a subfolder
+		// loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" ); // Loading fonts, if the site is at the root
+	</script>
+	<!-- Load Fonts CSS End -->
+
+	<link rel="stylesheet" href="css/header.min.css">
+	<link rel="stylesheet" href="css/h-media.min.css">
+	<link rel="stylesheet" href="css/register.min.css">
+	<link rel="stylesheet" href="css/footer.min.css">
+
+</head>
+
+<body>
+
+	<header class="page-header">
+
+		<div class="header-top">
+			<div class="container">
+
+				<div class="row">
+					<a href="#" class="open-mobile-menu">
+						<i class="icon-list"></i>
+					</a>
+
+					<div class="col-md-3 col-sm-5 col-xs-12">
+						<a href="index.html" class="logo">
+							<img src="img/logo.png" alt="Superstep" class="logo__picture">
+						</a>
+					</div>
+
+					<div class="col-md-5 col-sm-5 col-xs-12 header-search-column">
+						<div class="header-search">
+							<form class="header-form">
+								<input class="search-input" type="text" name="search" placeholder="Dünya markalarını keşfet">
+								<button class="btn" type="submit"></button>
+							</form>
+						</div>
+					</div>
+					
+					<div class="col-md-4 col-sm-5 header-user-menu">
+						<ul class="clearfix pull-right">
+							<li class="register-login">
+								<a href="#" class="toggle-login">
+									<img src="img/header/user.png" alt="">
+								</a>
+								<ul class="register-in">
+									<li>
+										<a href="#"><span>üye ol</span></a>
+									</li>
+									<li>
+										<a href="#"><span>üye girişi</span></a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="basket">
+								<a href="#" class="basket-link">
+									<span>Sepetim</span>
+									<b class="basket-count">
+										<em>(</em><span>0</span><em>)</em>
+									</b>
+								</a>
+							</li>
+
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+		<div class="header-menu clearfix">
+			<div class="container">
+				<div class="row clearfix">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<nav class="menu">
+							<ul class="menu__list clearfix">
+								<li class="menu__item"><a href="brands.html" class="menu__link menu__link--active">Markalar</a></li>
+								<li class="menu__item"><a href="index2.html" class="menu__link">erkek</a></li>
+								<li class="menu__item"><a href="index3.html" class="menu__link">kadın</a></li>
+								<li class="menu__item"><a href="products-list.html" class="menu__link">liste</a></li>
+								<li class="menu__item"><a href="#" class="menu__link icon new-season">yeni sezon</a></li>
+								<li class="menu__item "><a href="#" class="menu__link icon discount">indirim</a></li>
+								<li class="menu__item mg"><a href="#" class="menu__link">mağazalar</a></li>
+								<li class="menu__item bl"><a href="#" class="menu__link icon blog">Blog</a></li>
+								<li class="menu__item header-brand">
+									<div class="header-brand__link"><img src="img/converse-logo.png" alt="Alt"></div>
+								</li>
+								<li class="menu__item header-brand kd brnone">
+									<div class="header-brand__link"><img src="img/keds-logo.png" alt="Alt"></div>
+								</li>
+							</ul>
+						</nav>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</header>
+	<section class="register-sect">
+
+		<div class="register-cont container">
+
+			<div class="register-top row">
+				<div class="register-tab col-sm-6 col-xs-6">
+					<div class="row">
+						<h3 class="register-title sing-title">üye girişi</h3>
+					</div>
+				</div>
+				<div class="register-tab col-sm-6 col-xs-6">
+					<div class="row">
+						<h3 class="register-title register-new-title">yeni üyelik</h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="register-form-wrap row">
+
+				<div class="col-sm-6 col-xs-12 content-item">
+					<form action="get" class="user-login">
+						<h4 class="user-title">Üye Bilgiler</h4>
+
+						<input type="email" placeholder="email" aria-required="true" aria-describedby="email-format" required>
+						 <span id="email-format" class="email-help">Format: email</span>
+
+
+						<input type="password" placeholder="password" required>
+						<span id="email-password" class="password-help">Format: password</span>
+
+						<p class="user-forget"><a href="#">Şifremi Unuttum?</a></p>
+						<button class="user-btn"/>Giriş yap</button>
+					</form>
+				</div>
+
+				<div class="col-sm-6 col-xs-12 content-item">
+
+					<form action="get" class="user-register">
+
+						<h4 class="user-title">Kişisel Bilgiler</h4>
+						<div class="user-input clearfix">
+							<input type="text" placeholder="adı" required>
+							<input type="text" placeholder="soyadı" required>
+						</div>
+						<div class="user-input clearfix">
+							<input type="email" placeholder="soyadı" required>
+						</div>
+						<div class="user-input clearfix">
+							<input type="password" placeholder="şifre" required>
+							<input type="password" placeholder="şifre tekrar" required>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-12">
+								<label class="user-title" for="select-day">Doğum tarihi:</label>
+							</div>
+						</div>
+
+						<div class="user-select row">
+							<div class="col-sm-4">
+								<select id="select-day" class="select-birtday" name="dropdown" class="dropdown">
+									<option  value="1">1</option>
+									<option  value="2">2</option>
+									<option  value="3">3</option>
+									<option  value="4">4</option>
+									<option  value="5">5</option>
+									<option  value="6">6</option>
+									<option  value="6">6</option>
+									<option  value="7">7</option>
+									<option  value="7">7</option>
+									<option  value="8">8</option>
+									<option  value="8">8</option>
+									<option  value="9">9</option>
+									<option  value="9">9</option>
+									<option  value="10">10</option>
+									<option  value="10">10</option>
+									<option  value="12">12</option>
+									<option  value="12">12</option>
+									<option  value="13">13</option>
+								</select>
+							</div>
+							<div class="col-sm-4">
+								<select id="select-moon" class="select-birtday" name="dropdown" class="dropdown">
+									<option  value="1">Ocak</option>
+									<option  value="2">Şubat</option>
+									<option  value="3">Mart</option>
+									<option  value="4">Nisan</option>
+									<option  value="5">Mayıs</option>
+									<option  value="6">Haziran</option>
+									<option  value="7">Temmuz</option>
+									<option  value="8">Ağustos</option>
+									<option  value="9">Eylül</option>
+									<option  value="10">Ekim</option>
+									<option  value="11">Kasım</option>
+									<option  value="12">Aralık</option>
+								</select>
+							</div>
+							<div class="col-sm-4">
+								<select id="select-year" class="select-birtday" name="dropdown" class="dropdown">
+									<option  value="1">2006</option>
+									<option  value="2">2005</option>
+									<option  value="3">2004</option>
+									<option  value="4">2003</option>
+									<option  value="5">2002</option>
+									<option  value="5">2001</option>
+									<option  value="5">2000</option>
+									<option  value="5">1999</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-12">
+								<label class="user-title" for="user-sex">Cinsiyet:</label>
+							</div>
+						</div>
+
+						<div class="user-select row">
+							<div class="col-sm-4">
+								<select id="user-sex" class="select-quantity" name="dropdown" class="dropdown">
+									<option  value="1">Erkek</option>
+									<option  value="2">Kız</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="agreement-wrap">
+							<div class="agreement">
+								<label class="agreement-label">
+									<input class="agreement-input" type="checkbox" name="checkbox" required>
+									<span class="agreement-icon"></span>
+									<p class="agreement-text agr-popup">
+										<a href="#agreement-popup" data-effect="mfp-3d-unfold">Üyelik Sözleşmesini</a> 
+										okudum, kabul ediyorum. Kişisel verilerimin bu metinlerde belirtildiği gibi kullanılmasına ve işlenmesine izin veriyorum.
+									</p>
+								</label>
+
+								<label class="agreement-label">
+									<input class="agreement-input" type="checkbox" name="checkbox" required>
+									<span class="agreement-icon"></span>
+									<p class="agreement-text">
+										Kampanya ve Duyurulardan haberdar olmak istiyorum.
+									</p>
+								</label>
+							</div>
+						</div>
+
+						<button class="user-btn user-btn-reg"/>Giriş yap</button>
+
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer start -->
+	<footer class="footer" itemscope="" itemtype="https://schema.org/WPFooter">
+		<div class="footer-top">
+			<div class="container">
+				<div class="footer-center">
+					<div class="row">
+						<div class="col-md-2 col-sm-6 col-xs-12">
+							<h4>HESAP BİLGİLERİ</h4>
+							<ul>
+								<li><a rel="nofollow" href="#">Üyelik Bilgilerim</a></li>
+								<li><a rel="nofollow" href="#">Sepetim</a></li>
+								<li><a rel="nofollow" href="#">Siparişlerim</a></li>
+								<li><a rel="nofollow" href="#">Adreslerim</a></li>
+								<li><a rel="nofollow" href="#">Favorileri Ürünlerim</a></li>
+								<li><a rel="nofollow" href="#">Şifre Değiştir</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2 col-sm-6 col-xs-12">
+							<h4>MÜŞTERİ HİZMETLERİ</h4>
+							<ul>
+								<li><a rel="nofollow" href="#">İletişim</a></li>
+								<li><a rel="nofollow" href="#">Sık Sorulan Sorular</a></li>
+								<li><a rel="nofollow" href="#">Kullanım Şartları</a></li>
+								<li><a rel="nofollow" href="#">Gizlilik ve Güvenlik</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2 col-sm-6 col-xs-12">
+							<h4>KURUMSAL</h4>
+							<ul>
+								<li><a rel="nofollow" href="#">Hakkımızda</a></li>
+							</ul>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<h4>BLOG</h4>
+							<div class="footer-blogs-logo">
+								<a href="#"><img src="img/footer-link-superste.png" alt="Superstep"></a>
+								<a href="#"><img src="img/footer-link-localhoste.png" alt="Lacoste"></a>
+							</div>
+							<ul>
+								<li><a rel="nofollow" href="#">blog.superstep.com.tr</a></li>
+								<li><a rel="nofollow" href="#">blog.lacoste.com.tr</a></li>
+							</ul>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<h4>SOSYAL MEDYA</h4>
+							<div class="social-sprite">
+								<a rel="nofollow" href="#">facebook.com/SuperStepTR</a>
+								<a rel="nofollow" href="#">instagram.com/superstepcom</a>
+								<a rel="nofollow" href="#">twitter.com/SuperStepTR</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<a href="#" class="footer-bottom-logo">
+							<img src="img/footer-logo.png" alt="Logo Footer">
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<p class="copyright">
+							&copy; Copyright
+							<span itemprop="copyrightYear">2016</span>
+							<meta itemprop="copyrightHolder" content="Интернет-mağazası Superstep">
+							<span itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person">
+								<span itemprop="name">Superstep</span>
+							</span>.
+						</p>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="bank-cart">
+							<img src="img/cart-sprites.png" alt="Bank kart">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="top"><img src="img/yukari.png" alt=""></div>
+	</footer>
+	<!-- Footer the end-->
+	<div class="hidden">
+		<form id="agreement-popup" class="agreement-popup">
+			<div class="agreement-scroll">
+				<div class="agreement-padding">
+					<p><b>ÜYELİK SÖZLEŞMESİ</b></p>
+					<p><b>1. TARAFLAR</b></p>
+					<p>İş bu Sözleşme, a) www.sanalcadir.com Yenibosna Merkez Mh. Çınar Cd. Kavak Sk.No:39 Bahçelievler-İSTANBUL Eren Perakende Satış ve Mağazacılık A.Ş internet sitesinin faaliyetlerini gerçekleştiren b) www.sanalcadir.com internet sitesine üye olan internet kullanıcısı ("Üye") arasında akdedilmiştir.</p>
+					<p><b>2. SÖZLEŞMENİN KONUSU</b></p>
+					<p>İşbu Sözleşme’nin konusu Eren Perakende'nin sahip olduğu internet sitesi www.sanalcadir.com'dan üyenin yararlanma şartlarının belirlenmesidir.</p>
+					<p><b>3. TARAFLARIN HAK VE YÜKÜMLÜLÜKLERİ</b></p>
+					<p>•	3.1 Üye, www.sanalcadir.com internet sitesine üye olurken vermiş olduğu kişisel ve diğer sair bilgilerin kanunlar nezdinde doğru olduğunu, Eren Perakende'nin bu bilgilerin gerçeğe aykırılığı nedeniyle uğrayacağı tüm zararları aynen ve derhal tazmin edeceğini gayri kabulü rucü beyan ve taahhüt eder.</p>
+					<p>•	3.2 Üye, www.sanalcadir.com tarafından kendisine verilmiş olan şifreyi başka kişi ya da kuruluşlara veremez, üyenin söz konusu şifreyi kullanma hakkı bizzat kendisine aittir. Bu sebeple doğabilecek tüm sorumluluk ile üçüncü kişiler veya yetkili merciler tarafından Eren Perakendeye karşı ileri sürülebilecek tüm iddia ve taleplere karşı, Eren Perakendenin söz konusu izinsiz kullanımdan kaynaklanan her türlü tazminat ve sair talep hakkı saklıdır.</p>
+					<p>•	3.3 Üye, www.sanalcadir.com internet sitesini kullanırken yasal mevzuat hükümlerine riayet etmeyi ve bunları ihlal etmemeyi baştan kabul ve taahhüt eder. Aksi takdirde, doğacak tüm hukuki ve cezai yükümlülükler tamamen ve münhasıran üyeyi bağlayacaktır.</p>
+					<p>
+						•	3.4 Üye, www.sanalcadir.com internet sitesini hiçbir şekilde kamu düzenini bozucu, genel ahlaka aykırı, başkalarını rahatsız ve taciz edici şekilde, yasalara aykırı bir amaç için, başkalarının fikri ve telif haklarına tecavüz edecek şekilde kullanamaz.Ayrıca, üye başkalarının hizmetleri kullanmasını önleyici veya zorlaştırıcı faaliyet (spam, virus, truva atı, vb.) ve işlemlerde bulunamaz.
+					</p>
+					<p>
+						•	3.5 www.sanalcadir.com internet sitesinde üyeler tarafından beyan edilen, yazılan, kullanılan fikir ve düşünceler, tamamen üyelerin kendi kişisel görüşleri olup, görüşler sahibini bağlamaktadır.Bu görüş ve düşüncelerin Eren Perakende ile hiçbir ilgi ve bağlantısı yoktur.Eren Perakendenin üyenin beyan edeceği fikir ve görüşler nedeniyle üçüncü kişilerin uğrayabileceği zararlardan ve üçüncü kişilerin beyan edeceği fikir ve görüşler nedeniyle üyenin uğrayabileceği zararlardan dolayı herhangi bir sorumluluğu bulunmamaktadır.
+					</p>
+					<p>
+						•	3.6 Eren Perakende, üye verilerinin yetkisiz kişilerce okunmasından ve üye yazılım ve verilerine gelebilecek zararlardan dolayı sorumlu olmayacaktır.Üye, www.sanalcadir.com internet sitesinin kullanılmasından dolayı uğrayabileceği herhangi bir zarar yüzünden Eren Perakende’den tazminat talep etmemeyi peşinen kabul etmiştir.
+					</p>
+					<p>
+						•	3.7 Üye, diğer internet kullanıcılarının yazılımlarına ve verilerine izinsiz olarak ulaşmamayı veya bunları kullanmamayı kabul etmiştir.Aksi takdirde, bundan doğacak hukuki ve cezai sorumluluklar tamamen üyeye aittir.
+					</p>
+					<p>
+						•	3.8 www.sanalcadir.com internet sitesine girilmesi, sitenin ya da sitedeki bilgilerin ve diğer verilerin programların vs.kullanılması sebebiyle, sözleşmenin ihlali, haksız fiil, ya da başkaca sebeplere binaen, doğabilecek doğrudan ya da dolaylı hiçbir zarardan Eren Perakende sorumlu değildir.Eren Perakende, sözleşmenin ihlali, haksız fiil, ihmal veya diğer sebepler neticesinde; işlemin kesintiye uğraması, hata, ihmal, kesinti hususunda herhangi bir sorumluluk kabul etmez.
+					</p>
+					<p>
+						•	3.9 www.sanalcadir.com her zaman tek taraflı olarak gerektiğinde üyenin üyeliğini silme, müşteriye ait dosya, belge ve bilgileri silme hakkı vardır.Üye işbu tasarrufu önceden kabul eder. Bu durumda, Eren Perakende’nin hiçbir sorumluluğu yoktur. Sanal Çadır sitesi içerisinde verilen puan, indirim vs gibi özel haklar, sistem kural ihlali, sistem hatası gibi durumlarda geçersiz olabilir, alışveriş içerisinde puan, indirim ile ödenmiş kısımlar iptal edilebilir. Mücbir sebepler ve bununla sınırlı olmaksızın, altyapı yetersizliği, hükümet müdahaleleri, savaşlar, iç ayaklanmalar, kaçırma, yangın, sel, kaza, fırtına, grev, lokavt, terör saldırıları ya da bizim veya tedarikçileri etkileyen endüstriyel eylemler nedeni ile yapılamayan veya süresinde yapılamayan sevkiyatlardan şirketimiz mesul değildir.
+					</p>
+					<p>
+						•	3.10 Eren Perakende, www.sanalcadir.com internet sitesinin genel görünüm ve dizaynı ile internet sitesindeki tüm bilgi, resim, superstep markası ve diğer markalar, www.sanalcadir.com alan adı, logo, ikon, görsel, yazılı, elektronik, grafik veya makinede okunabilir şekilde sunulan teknik veriler, bilgisayar yazılımları, uygulanan satış sistemi, iş metodu ve iş modeli de dahil tüm materyallerin(“Materyaller”) ve bunlara ilişkin fikri ve sınai mülkiyet haklarının sahibi ve/ veya lisans sahibidir ve söz konusu materyaller ilgili Kanunlarca yasal koruma altındadır.İnternet sitesinde bulunan hiçbir Materyal; önceden izin alınmadan ve kaynak gösterilmeden, kod ve yazılım da dâhil olmak üzere, değiştirilemez, kopyalanamaz, çoğaltılamaz, başka bir lisana çevrilemez, yeniden yayımlanamaz, başka bir bilgisayara yüklenemez, postalanamaz, iletilemez, sunulamaz ya da dağıtılamaz. Ayrıca, bu internet sitesinde adı geçen başkaca şirketler ve ürünleri, sahiplerinin ticari markalarıdır ve ayrıca fikri mülkiyet hakları kapsamında korunmaktadır. İnternet sitesinin bütünü veya bir kısmı başka bir internet sitesinde izinsiz olarak kullanılamaz.Aksi fiiller hukuki ve cezai sorumluluğu gerektirir.Eren Perakendenin konuya ilişkin olarak burada açıkça belirtilmeyen diğer tüm hakları da saklıdır.
+					</p>
+					<p>
+						•	3.11 Eren Perakende tarafından, www.sanalcadir.com internet sitesinin iyileştirilmesi, geliştirilmesine yönelik olarak ve / veya yasal mevzuat çerçevesinde siteye erişmek için kullanılan internet servis sağlayıcısının adı ve internet Protokol (IP)adresi, Siteye erişilen tarih ve saat, sitede bulunulan sırada erişilen sayfalar ve siteye doğrudan bağlanılmasını sağlayan Web sitesinin internet adresi gibi birtakım bilgiler toplanabilir.
+					</p>
+					<p>
+						•	3.12 Eren Perakende kullanıcılarına daha iyi hizmet sunmak, ürünlerini ve hizmetlerini iyileştirmek, sitenin kullanımını kolaylaştırmak için kullanımını kullanıcılarının özel tercihlerine ve ilgi alanlarına yönelik çalışmalarda üyelerin kişisel bilgilerini kullanabilir.Eren Perakende, üyenin www.sanalcadir.com internet sitesi üzerinde yaptığı hareketlerin kaydını bulundurma hakkını saklı tutar.
+					</p>
+					<p>
+						•	3.13 www.sanalcadir.com internet sitesine üye olan kişi, yürürlükte bulunan ve / veya yürürlüğe alınacak uygulamalar kapsamında www.sanalcadir.com tarafından kendisine ürün ve hizmet tanıtımları, reklamlar, kampanyalar, avantajlar, anketler ve diğer müşteri memnuniyeti uygulamaları sunulmasına izin verdiğini beyan ve kabul eder.Üye, www.sanalcadir.com'a üye olurken ve/veya başka yollarla geçmişte vermiş olduğu ve/veya gelecekte vereceği kişisel ve alışveriş bilgilerinin ve alışveriş ve/veya tüketici davranış bilgilerinin yukarıdaki amaçlarla toplanmasına arşivlenmesine izin verdiğini beyan ve kabul eder. Üye aksini bildirmediği sürece üyeliği sona erdiğinde de verilerin toplanmasına arşivlenmesine izin verdiğini beyan ve kabul eder.Üye aksini bildirmediği sürece www.sanalcadir.com'un kendisi ile internet, telefon, SMS, vb iletişim kanalları kullanarak irtibata geçmesine izin verdiğini beyan ve kabul eder.Üye yukarıda bahsi geçen bilgilerin toplanması, paylaşılması, kullanılması, arşivlenmesi ve kendisine erişilmesi nedeniyle doğrudan ve / veya dolaylı maddi ve / veya manevi menfi ve / veya müspet, velhasıl herhangi bir zarara uğradığı konusunda talepte bulunmayacağını ve Eren Perakendeyi sorumlu tutmayacağını beyan ve kabul eder.Üye veri paylaşım tercihlerini değiştirmek isterse, bu talebini www.sanalcadir.com'un müşteri hizmetleri çağrı merkezine iletebilir.
+					</p>
+					<p>
+						•	3.14 Eren Perakende, üyenin kişisel bilgilerini yasal bir zorunluluk olarak istendiğinde veya(a) yasal gereklere uygun hareket etmek veya Eren Perakendeye tebliğ edilen yasal işlemlere uymak; (b)www.sanalcadir.com internet sitesinin haklarını ve mülkiyetini korumak ve savunmak için gerekli olduğuna iyi niyetle kanaat getirdiği hallerde açıklayabilir.
+					</p>
+					<p>
+						•	3.15 www.sanalcadir.com internet sitesinin virus ve benzeri amaçlı yazılımlardan arındırılmış olması için mevcut imkanlar dâhilinde tedbir alınmıştır. Bunun yanında nihai güvenliğin sağlanması için kullanıcının, kendi virus koruma sistemini tedarik etmesi ve gerekli korunmayı sağlaması gerekmektedir.Bu bağlamda üye www.sanalcadir.com internet sitesine girmesiyle, kendi yazılım ve işletim sistemlerinde oluşabilecek tüm hata ve bunların doğrudan ya da dolaylı sonuçlarından kendisinin sorumlu olduğunu kabul etmiş sayılır.
+					</p>
+					<p>
+						•	3.16 Eren Perakende, sitenin içeriğini dilediği zaman değiştirme, kullanıcılara sağlanan herhangi bir hizmeti değiştirme ya da sona erdirme veya www.sanalcadir.com internet sitesinde kayıtlı kullanıcı bilgi ve verilerini silme hakkını saklı tutar.
+					</p>
+					<p>
+						•	3.17 Eren Perakende, üyelik sözleşmesinin koşullarını hiçbir şekil ve surette ön ihbara ve / veya ihtara gerek kalmaksızın her zaman değiştirebilir, güncelleyebilir veya iptal edebilir.Değiştirilen, güncellenen ya da yürürlükten kaldırılan her hüküm, yayın tarihinde tüm üyeler bakımından hüküm ifade edecektir.
+					</p>
+					<p>
+						•	3.18 Taraflar,Eren Perakendeye ait tüm bilgisayar kayıtlarının tek ve gerçek münhasır delil olarak, HUMK madde 287'ye uygun şekilde esas alınacağını ve söz konusu kayıtların bir delil sözleşmesi teşkil ettiği hususunu kabul ve beyan eder.
+					</p>
+					<p>
+						•	3.19 www.sanalcadir.com iş bu üyelik sözleşmesi uyarınca, üyelerinin kendisinde kayıtlı elektronik posta adreslerine bilgilendirme mailleri ve cep telefonlarına bilgilendirme SMS’leri gönderme yetkisine sahip olmakla beraber, üye işbu üyelik sözleşmesini onaylamasıyla beraber bilgilendirme maillerinin elektronik posta adresine ve bilgilendirme SMS’lerinin cep telefonuna gönderilmesini kabul etmiş sayılacaktır.Üye mail ve / veya SMS almaktan vazgeçmek istemesi durumunda “Hesabım” bölümünden mail ve / veya SMS gönderim iptal işlemini gerçekleştirebilecektir.
+					</p>
+					<p>
+						•	3.20 www.sanalcadir.com sitesinden alınan ürünler sadece kişisel kullanım içindir. Üyelerin satın aldıkları ürünleri, tekrardan satma hakkı yoktur.Böyle bir durumdan şüphelendiğinde, Eren Perakende, bu siparişi iptal etme hakkına sahiptir. Ayrıca Eren Perakende, toplu alımları engelleme hakkına sahiptir.
+					</p>
+					<p>
+						•	3.21 İşbu üyelik sözleşmesi içerisinde sayılan maddelerden bir ya da birkaçını ihlal eden üye işbu ihlal nedeniyle cezai ve hukuki olarak şahsen sorumlu olup, Eren Perakendeyi bu ihlallerin hukuki ve cezai sonuçlarından arî tutacaktır. Ayrıca; işbu ihlal nedeniyle, olayın hukuk alanına intikal ettirilmesi halinde, Eren Perakendenin üyeye karşı üyelik sözleşmesine riayet edilmemesinden dolayı tazminat talebinde bulunma hakkı saklıdır.
+					</p>
+					<p>
+						•	3.22 Eren Perakende, dilediği zaman hak ve sorumlulukları düzenleyen bu sayfanın içeriğini güncelleme yetkisini saklı tutmakta olup, kullanıcılarına siteye her girişte yasal uyarı sayfasını ziyaret etmelerini önemle tavsiye etmektedir.
+					</p>
+					<p><b>4. SÖZLEŞMENİN FESHİ</b></p>
+					<p>İşbu sözleşme üyenin üyeliğini iptal etmesi veya Eren Perakende tarafından üyeliğinin iptal edilmesine kadar yürürlükte kalacaktır.Eren Perakende üyenin üyelik sözleşmesinin herhangi bir hükmünü ihlal etmesi durumunda üyenin üyeliğini iptal ederek sözleşmeyi tek taraflı olarak feshedebilecektir.</p>
+					<p><b>5. İHTİLAFLARIN ÇÖZÜMÜ</b></p>
+					<p>İşbu sözleşmeye ilişkin ihtilaflarda İstanbul Mahkemeleri ve İcra Daireleri yetkilidir.</p>
+					<p><b>6. SÖZLEŞMENİN FESHİ</b></p>
+					<p>Üyenin, üyelik kaydı yapması üyenin üyelik sözleşmesinde yer alan tüm maddeleri okuduğu ve üyelik sözleşmesinde yer alan maddeleri kabul ettiği anlamına gelir. İşbu Sözleşme üyenin üye olması anında akdedilmiş ve karşılıklı olarak yürürlüğe girmiştir.</p>
+					<p><b>Gizlilik</b></p>
+					<p>Kişisel Veriler "sınırlama olmaksızın hakkınızda tanımlayıcı nitelikteki herhangi bir bilgi demektir. Bu tanım adınız, adresiniz, size özel tanımlanan şifreler, kayıtlı telefon numarası, e-posta adresi, finans bilgileri, kayıt adı, şifre ve diğer bilgileri içermektedir. Web sitesi üzerinden sipariş vermek için bu kişisel bilgilerin web sitesinde adınıza açılacak bir internet hesabı ile kaydedilmesi zorunludur. Bu bilgilerin temin edilmemesi halinde web sitesi üzerinden sipariş ve satış işleminin gerçekleştirilmesi mümkün değildir.</p>
+					<p><b>Kayıtlı Kullanıcılar</b></p>
+					<p>SANAL ÇADIR'da siteyi gezmek için kayıt olmanıza gerek yoktur. Ancak, sunulmuş olan veriler, siparişin işlemden geçirilmesi ve sonraki alışverişlerinizin mümkün olan en kolay ve hızlı şekilde gerçekleştirilmesi için verilmesi gereken isim, adres, telefon numarası, e-mail adresi, finansal bilgiler, şifreler ve kişisel bilgiler Superstep.com veri tabanında saklanacaktır.</p>
+					<p>Kayıt sonrasında web sitesi kanalı ile verilecek sipariş teklifleri tarafımızdan kabul edilene kadar geçerli ve bağlayıcı bir sözleşme niteliği taşımaz. Ancak tüketici teklifi/icabı ile bağlı olacaktır. Kayıt olma esnasında tüm kullanıcılar sistemin kendilerini otomatik olarak tanımalarını isteyebilir. Bu durum kullanıcılar için alışveriş işlemini hızlandıracak olup, kişisel bilgilerine erişmek için daha öncesinde sisteme giriş yapmalarına gerek kalmayacağından, kullanıcıların bilgilerine direkt bir şekilde erişmelerine imkân verecektir. Otomatik tanımlama, cookies (tanımlama bilgileri) ile gerçekleştirilir. Eğer kullanıcılar sistemin kendilerini otomatik olarak tanımasını isterse, Superstep bu kullanıcılardan yalnızca farklı bir bilgisayardan Superstep’de oturum açtıklarında veya geçici internet dosyalarını (geçici bellek ve/veya tanımlama bilgileri) silmiş olduklarında kendilerini tanıtmalarını isteyecektir.</p>
+					<p>Kayıtlı bir kullanıcı olarak, dilerseniz normal posta veya e-posta üzerinden Superstep yayımları ile ilgili bilgiler size gönderilecektir.</p>
+					<p><b>Güvenlik ve Gizlilik</b></p>
+					<p>SANAL ÇADIR'a sunduğunuz bilgiler alışveriş siparişlerini işlemek, web sitesi üzerinde gezinmeyi ve Sanal Çadır ürünlerinin satın alınmasını kolaylaştırmak ve bu web sitesi ve/veya genel olarak Superstep ile bağlantılı yeni ürünler, özel teklifler ve haberlerle ilgili olarak sizi e-posta ve/veya normal posta üzerinden günlük ve / veya haftalık olarak bilgilendirmek için kullanılacaktır. Herhangi bir zamanda günlük, haftalık e-mail gönderim listemizden çıkmak isterseniz, gönderdiğimiz e- maillerin alt kısmında bulunan “E-bülten listemizden çıkmak için lütfen tıklayınız” linkine tıklayarak e-bülten üyeliğinden tek tıkla kolayca çıkabilirsiniz.</p>
+					<p>EREN PERAKENDE A.Ş. müşteriler tarafından sunulmuş olan bilgilerin üçüncü şahıslarla kural olarak paylaşmayacaktır. Ancak Eren Perakende A.Ş.’nin, web sitesinin kullanım verimliliğini arttırmak, ödeme, teslim, sipariş ve benzeri konulardaki aksaklıkları çözüme kavuşturmak, ürün teslimi ve ürün bedelinin tahsili için bünyesindeki ortak ve grup niteliğindeki şirketler ve işbu sözleşme gereğince kargo şirketleri ya da bankalar ile veya web sitesinden satışı yapılan ürünlerin marka ve lisans hakkı sahipleri ile ya da Türkiye distribütörleri ile gerektiği takdirde müşteri kişisel bilgilerini paylaşma hakkı saklıdır. Yine Türk Hukuku gereğince yasal mercilerce talep edilen yazılı taleplere cevap verilmesi kanuni bir zorunluluk olduğundan bu şekilde bir yazılı talep halinde kişisel bilgilerin paylaşımı sağlanacaktır.Alınmış olan tüm kişisel bilgiler yasal düzenlemelere uygun olarak kullanılacaktır. Bu web sitesinin kullanıcıları kayıt formunda bulunan bilgilere her zaman erişebilir ve e-posta ile veya aşağıdaki adrese normal posta yoluyla yazılı olarak başvurup bilgileri değiştirebilir ve iptal edebilir. Sipariş aşamasında bulunduğunuz web sitesi yüksek güvenlik programları ile koruma altındadır. Ancak internet üzerinden bilgi iletiminin tamamen güvenli olarak sağlanması olanaklı değildir. Bu nedenle garanti edilemeyen iletimler risk altında olabilir. Bu konuda tarafınızdan da gerekli güvenlik koşullarına uygun davranılması gerekmektedir.</p>
+					<p>Şirketimizin web sitesinde yer alan Satın Alma koşulları ve Gizlilik Politikası koşulları ile ilgili olarak Web sitesi ana sayfasında değişiklik yapma hakkımız saklıdır. Yasalar ile zorunlu hale gelmesi nedeni ile yapılan değişiklikler haricindeki diğer değişiklikleri kabul etmezseniz, irtibat adresimize yazılı olarak bilgi geçmeniz gerekmektedir. Periyodik olarak bu Gizlilik Politikası mevcut şartlarını gözden geçirmek için bu sayfayı ziyaret etmelisiniz.</p>
+					<p><b>EREN PERAKENDE A.Ş.</b></p>
+					<p>Müşteri Hizmetleri</p>
+					<p>Mahmutbey Mah. Ordu Cad. No:52 Bağcılar/ İstanbul</p>
+					<p>Tel: 444 37 36</p>
+					<p>(Çağrı merkezimiz hafta içi ve Cumartesi günleri 09:00-20:00 Pazar günleri 11:00-20:00 arası çalışmaktadır.)</p>
+					<p><b>E-Posta : mh@sanalcadir.com</b></p>
+				</div>
+			</div>
+
+			<div class="user-btn-popup">
+				<button type="button" class="user-btn user-btn-confirm">Onaylıyorum</button>
+			</div>
+		</form>
+	</div>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

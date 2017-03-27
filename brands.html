@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- МЕТА --> 
+	<title>Register</title> 
+	<meta name="description" content="maximum 155 karakter" /> 
+	<meta name="Keywords" content="меtа-taglar, şablon, html, css">
+	<!-- open graph Facebook--> 
+	<meta property="og:title" content="Başlık" /> 
+	<meta property="og:type" content="website" /> 
+
+	<!-- Eğer site çok dilde ise --> 
+	<!-- <meta property="og:locale" content="ru_RU"> --> 
+	<meta property="og:url" content="http://localhost.my" /> 
+	<!-- Min 600х315, maksimum 8Мb --> 
+	<meta property="og:image" content="http://localhost.my/img/og_cover.jpg" /> 
+	<meta property="og:description" content="Açıklama 155 karakter fazla olmayacak" /> 
+	<meta property="fb:admins" content="Facebook ID" />
+
+	<!-- Twitter --> 
+	<meta name="twitter:card" content="summary_large_image"> 
+	<meta name="twitter:site" content="@şirketinize__ait__twitter__nik"> 
+	<meta name="twitter:title" content="Başlık"> 
+	<meta name="twitter:description" content="Açıklama 155 karakter fazla olmayacak"> 
+	<meta name="twitter:creator" content="@twitter__nik">
+
+	<!-- Resim boyutları min 280х150, max 1Мб --> 
+	<meta name="twitter:image" content="http://localhost.my/img/tw_cover.jpg"> 
+
+	<!-- G+ / Pinterest --> 
+	<meta itemprop="name" content="Başlık"> 
+	<meta itemprop="description" content="Açıklama 155 karakter fazla olmayacak"> 
+	<meta itemprop="image" content="http://localhost.my/img/g_cover.jpg"> 
+
+	<!-- Google authorship --> 
+	<link rel="author" href="https://plus.google.com/[Google+_Profile]/posts"/> 
+	<link rel="publisher" href="https://plus.google.com/[Google+_Page_Profile]"/> 
+
+	<!-- Favicons and icons for websites --> 
+	<!-- For new browsers - multisize ico -->
+	<link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="favicon.ico">
+	<!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicon-152.png">
+	<!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon-144.png">
+	<!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicon-120.png">
+	<!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon-114.png">
+	<!-- For iPhone 6+ -->
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="favicon-180.png">
+	<!-- For first- and second-generation iPad: -->
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon-72.png">
+	<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+	<link rel="apple-touch-icon-precomposed" href="favicon-57.png">
+	<!-- For Old Chrome -->
+	<link rel="icon" href="favicon-32.png" sizes="32x32">
+	<!-- For IE10 Metro -->
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="favicon-144.png">
+	<!-- Chrome for Android -->
+	<link rel="icon" sizes="192x192" href="favicon-192.png">
+
+	<!-- Chrome, Firefox OS and Opera --> 
+	<meta name="theme-color" content="#4285f4" />
+	<!-- Windows Phone --> 
+	<meta name="msapplication-navbutton-color" content="#4285f4" /> 
+	<!-- iOS Safari --> 
+	<meta name="apple-mobile-web-app-capable" content="yes" /> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-transcluent" /> 
+
+	<!-- Яндекс.Браузер --> 
+	<meta name="viewport" content="ya-title=#000000,ya-dock=fade" />
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)};function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n};function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+	<!-- Load Fonts CSS Start -->
+	<script>
+		loadCSS( "css/fonts.min.css?ver=1.0.0", false, "all" ); // Loading fonts, if the site is located in a subfolder
+		// loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" ); // Loading fonts, if the site is at the root
+	</script>
+	<!-- Load Fonts CSS End -->
+
+	<link rel="stylesheet" href="css/header.min.css">
+	<link rel="stylesheet" href="css/h-media.min.css">
+	<link rel="stylesheet" href="css/brands.min.css">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+</head>
+
+<body>
+
+	<header class="page-header">
+
+		<div class="header-top">
+			<div class="container">
+
+				<div class="row">
+					<a href="#" class="open-mobile-menu">
+						<i class="icon-list"></i>
+					</a>
+
+
+					<div class="col-md-3 col-sm-5 col-xs-12">
+						<a href="index.html" class="logo">
+							<img src="img/logo.png" alt="Superstep" class="logo__picture">
+						</a>
+					</div>
+
+					<div class="col-md-5 col-sm-5 col-xs-12 header-search-column">
+						<div class="header-search">
+							<form class="header-form">
+								<input class="search-input" type="text" name="search" placeholder="Dünya markalarını keşfet">
+								<button class="btn" type="submit"></button>
+							</form>
+						</div>
+					</div>
+					
+					<div class="col-md-4 col-sm-5 header-user-menu">
+						<ul class="clearfix pull-right">
+							<li class="register-login">
+								<a href="#" class="toggle-login">
+									<img src="img/header/user.png" alt="">
+								</a>
+								<ul class="register-in">
+									<li>
+										<a href="#"><span>üye ol</span></a>
+									</li>
+									<li>
+										<a href="#"><span>üye girişi</span></a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="basket">
+								<a href="#" class="basket-link">
+									<span>Sepetim</span>
+									<b class="basket-count">
+										<em>(</em><span>0</span><em>)</em>
+									</b>
+								</a>
+							</li>
+
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+		<div class="header-menu clearfix">
+			<div class="container">
+				<div class="row clearfix">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<nav class="menu">
+							<ul class="menu__list clearfix">
+								<li class="menu__item"><a href="brands.html" class="menu__link menu__link--active">Markalar</a></li>
+								<li class="menu__item"><a href="index2.html" class="menu__link">erkek</a></li>
+								<li class="menu__item"><a href="index3.html" class="menu__link">kadın</a></li>
+								<li class="menu__item"><a href="products-list.html" class="menu__link">liste</a></li>
+								<li class="menu__item"><a href="#" class="menu__link icon new-season">yeni sezon</a></li>
+								<li class="menu__item "><a href="#" class="menu__link icon discount">indirim</a></li>
+								<li class="menu__item mg"><a href="#" class="menu__link">mağazalar</a></li>
+								<li class="menu__item bl"><a href="#" class="menu__link icon blog">Blog</a></li>
+								<li class="menu__item header-brand">
+									<div class="header-brand__link"><img src="img/converse-logo.png" alt="Alt"></div>
+								</li>
+								<li class="menu__item header-brand kd brnone">
+									<div class="header-brand__link"><img src="img/keds-logo.png" alt="Alt"></div>
+								</li>
+							</ul>
+						</nav>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</header>
+	<section class="container">
+
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="sect-title sect-brands-title">Markalar</h2>
+			</div>
+		</div>
+
+		<div class="brands-wrap">
+
+			<a href="#" class="brands-item brands-logo">
+				<img src="img/markalar/adidas.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-img">
+				<img src="img/markalar/1.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-logo">
+				<img src="img/markalar/aigle.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-img">
+				<img src="img/markalar/4.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-logo">
+				<img src="img/markalar/asics.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-img">
+				<img src="img/markalar/6.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-img">
+				<img src="img/markalar/7.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-logo">
+				<img src="img/markalar/camper.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-img">
+				<img src="img/markalar/9.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-logo">
+				<img src="img/markalar/conv.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-img">
+				<img src="img/markalar/11.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-logo">
+				<img src="img/markalar/eastrak.png" alt="Img">
+			</a>
+
+			<a href="#" class="brands-item brands-logo">
+				<img src="img/markalar/adidas.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-img">
+				<img src="img/markalar/1.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-logo">
+				<img src="img/markalar/aigle.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-img">
+				<img src="img/markalar/4.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-logo">
+				<img src="img/markalar/asics.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-img">
+				<img src="img/markalar/6.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-img">
+				<img src="img/markalar/7.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-logo">
+				<img src="img/markalar/camper.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-img">
+				<img src="img/markalar/9.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-logo">
+				<img src="img/markalar/conv.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-img">
+				<img src="img/markalar/11.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-logo">
+				<img src="img/markalar/eastrak.png" alt="Img">
+			</a>
+
+			<a href="#" class="brands-item brands-logo">
+				<img src="img/markalar/adidas.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-img">
+				<img src="img/markalar/1.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-logo">
+				<img src="img/markalar/aigle.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-img">
+				<img src="img/markalar/4.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-logo">
+				<img src="img/markalar/asics.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-img">
+				<img src="img/markalar/6.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-img">
+				<img src="img/markalar/7.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-logo">
+				<img src="img/markalar/camper.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-img">
+				<img src="img/markalar/9.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-logo">
+				<img src="img/markalar/conv.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-img">
+				<img src="img/markalar/11.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-logo">
+				<img src="img/markalar/eastrak.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-logo">
+				<img src="img/markalar/adidas.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-img">
+				<img src="img/markalar/1.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-logo">
+				<img src="img/markalar/aigle.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-img">
+				<img src="img/markalar/4.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-logo">
+				<img src="img/markalar/asics.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-img">
+				<img src="img/markalar/6.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-img">
+				<img src="img/markalar/7.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-logo">
+				<img src="img/markalar/camper.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-img">
+				<img src="img/markalar/9.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-logo">
+				<img src="img/markalar/conv.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-img">
+				<img src="img/markalar/11.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-logo">
+				<img src="img/markalar/eastrak.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-logo">
+				<img src="img/markalar/adidas.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-img">
+				<img src="img/markalar/1.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-logo">
+				<img src="img/markalar/aigle.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-img">
+				<img src="img/markalar/4.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-logo">
+				<img src="img/markalar/asics.png" alt="Img">
+			</a>
+			<a href="#" class="brands-item brands-img">
+				<img src="img/markalar/6.png" alt="Img">
+			</a>
+
+		</div>
+		
+	</section>
+
+
+	<!-- Footer start -->
+	<footer class="footer">
+		<div class="footer-top">
+			<div class="container">
+				<div class="footer-center">
+					<div class="row">
+						<div class="col-md-2 col-sm-6 col-xs-12">
+							<h4>HESAP BİLGİLERİ</h4>
+							<ul>
+								<li><a href="#">Üyelik Bilgilerim</a></li>
+								<li><a href="#">Sepetim</a></li>
+								<li><a href="#">Siparişlerim</a></li>
+								<li><a href="#">Adreslerim</a></li>
+								<li><a href="#">Favorileri Ürünlerim</a></li>
+								<li><a href="#">Şifre Değiştir</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2 col-sm-6 col-xs-12">
+							<h4>MÜŞTERİ HİZMETLERİ</h4>
+							<ul>
+								<li><a href="#">İletişim</a></li>
+								<li><a href="#">Sık Sorulan Sorular</a></li>
+								<li><a href="#">Kullanım Şartları</a></li>
+								<li><a href="#">Gizlilik ve Güvenlik</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2 col-sm-6 col-xs-12">
+							<h4>KURUMSAL</h4>
+							<ul>
+								<li><a href="#">Hakkımızda</a></li>
+							</ul>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<h4>BLOG</h4>
+							<div class="footer-blogs-logo">
+								<a href="#"><img src="img/footer-link-superste.png" alt="Superstep"></a>
+								<a href="#"><img src="img/footer-link-localhoste.png" alt="Lacoste"></a>
+							</div>
+							<ul>
+								<li><a href="#">blog.superstep.com.tr</a></li>
+								<li><a href="#">blog.lacoste.com.tr</a></li>
+							</ul>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<h4>SOSYAL MEDYA</h4>
+							<div class="social-sprite">
+								<a href="#">facebook.com/SuperStepTR</a>
+								<a href="#">instagram.com/superstepcom</a>
+								<a href="#">twitter.com/SuperStepTR</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<a href="#" class="footer-bottom-logo">
+							<img src="img/footer-logo.png" alt="Logo Footer">
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<p>© Copyright 2016  superstep.com.  Tüm hakları saklıdır.</p>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="bank-cart">
+							<img src="img/cart-sprites.png" alt="Bank kart">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="top"><img src="img/yukari.png" alt=""></div>
+	</footer>
+	<!-- Footer the end-->
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,2117 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- МЕТА --> 
+	<title>Register</title> 
+	<meta name="description" content="maximum 155 karakter" /> 
+	<meta name="Keywords" content="меtа-taglar, şablon, html, css">
+	<!-- open graph Facebook--> 
+	<meta property="og:title" content="Başlık" /> 
+	<meta property="og:type" content="website" /> 
+
+	<!-- Eğer site çok dilde ise --> 
+	<!-- <meta property="og:locale" content="ru_RU"> --> 
+	<meta property="og:url" content="http://localhost.my" /> 
+	<!-- Min 600х315, maksimum 8Мb --> 
+	<meta property="og:image" content="http://localhost.my/img/og_cover.jpg" /> 
+	<meta property="og:description" content="Açıklama 155 karakter fazla olmayacak" /> 
+	<meta property="fb:admins" content="Facebook ID" />
+
+	<!-- Twitter --> 
+	<meta name="twitter:card" content="summary_large_image"> 
+	<meta name="twitter:site" content="@şirketinize__ait__twitter__nik"> 
+	<meta name="twitter:title" content="Başlık"> 
+	<meta name="twitter:description" content="Açıklama 155 karakter fazla olmayacak"> 
+	<meta name="twitter:creator" content="@twitter__nik">
+
+	<!-- Resim boyutları min 280х150, max 1Мб --> 
+	<meta name="twitter:image" content="http://localhost.my/img/tw_cover.jpg"> 
+
+	<!-- G+ / Pinterest --> 
+	<meta itemprop="name" content="Başlık"> 
+	<meta itemprop="description" content="Açıklama 155 karakter fazla olmayacak"> 
+	<meta itemprop="image" content="http://localhost.my/img/g_cover.jpg"> 
+
+	<!-- Google authorship --> 
+	<link rel="author" href="https://plus.google.com/[Google+_Profile]/posts"/> 
+	<link rel="publisher" href="https://plus.google.com/[Google+_Page_Profile]"/> 
+
+	<!-- Favicons and icons for websites --> 
+	<!-- For new browsers - multisize ico -->
+	<link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="favicon.ico">
+	<!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicon-152.png">
+	<!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon-144.png">
+	<!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicon-120.png">
+	<!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon-114.png">
+	<!-- For iPhone 6+ -->
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="favicon-180.png">
+	<!-- For first- and second-generation iPad: -->
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon-72.png">
+	<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+	<link rel="apple-touch-icon-precomposed" href="favicon-57.png">
+	<!-- For Old Chrome -->
+	<link rel="icon" href="favicon-32.png" sizes="32x32">
+	<!-- For IE10 Metro -->
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="favicon-144.png">
+	<!-- Chrome for Android -->
+	<link rel="icon" sizes="192x192" href="favicon-192.png">
+
+	<!-- Chrome, Firefox OS and Opera --> 
+	<meta name="theme-color" content="#4285f4" />
+	<!-- Windows Phone --> 
+	<meta name="msapplication-navbutton-color" content="#4285f4" /> 
+	<!-- iOS Safari --> 
+	<meta name="apple-mobile-web-app-capable" content="yes" /> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-transcluent" /> 
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)};function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n};function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+	<!-- Load Fonts CSS Start -->
+	<script>
+		loadCSS( "css/fonts.min.css?ver=1.0.0", false, "all" ); // Loading fonts, if the site is located in a subfolder
+		// loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" ); // Loading fonts, if the site is at the root
+	</script>
+	<!-- Load Fonts CSS End -->
+
+	<link rel="stylesheet" href="css/header.min.css">
+	<link rel="stylesheet" href="css/h-media.min.css">
+	<link rel="stylesheet" href="css/breadcrumb.min.css">
+	<link rel="stylesheet" href="css/products-list.min.css">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+		
+		<header class="page-header">
+
+			<div class="header-top">
+				<div class="container">
+
+					<div class="row">
+						<a href="#" class="open-mobile-menu">
+							<i class="icon-list"></i>
+						</a>
+
+
+						<div class="col-md-3 col-sm-5 col-xs-12">
+							<a href="index.html" class="logo">
+								<img src="img/logo.png" alt="Superstep" class="logo__picture">
+							</a>
+						</div>
+
+						<div class="col-md-5 col-sm-5 col-xs-12 header-search-column">
+							<div class="header-search">
+								<form class="header-form">
+									<input class="search-input" type="text" name="search" placeholder="Dünya markalarını keşfet">
+									<button class="btn" type="submit"></button>
+								</form>
+							</div>
+						</div>
+						
+						<div class="col-md-4 header-user-menu">
+							<ul class="clearfix pull-right">
+								<li class="register-login">
+									<a href="#" class="toggle-login">
+										<img src="img/header/user.png" alt="">
+									</a>
+									<ul class="register-in clearfix">
+										<li>
+											<a href="#"><span>üye ol</span></a>
+										</li>
+										<li>
+											<a href="#"><span>üye girişi</span></a>
+										</li>
+									</ul>
+								</li>
+
+								<li class="basket">
+									<a href="#" class="basket-link">
+										<span>Sepetim</span>
+										<b class="basket-count">
+											<em>(</em><span>0</span><em>)</em>
+										</b>
+									</a>
+								</li>
+
+							</ul>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+			<div class="header-menu clearfix">
+				<div class="container">
+					<div class="row clearfix">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<nav class="menu">
+								<ul class="menu__list clearfix">
+									<li class="menu__item"><a href="brands.html" class="menu__link menu__link--active">Markalar</a></li>
+									<li class="menu__item"><a href="index2.html" class="menu__link">erkek</a></li>
+									<li class="menu__item"><a href="index3.html" class="menu__link">kadın</a></li>
+									<li class="menu__item"><a href="products-list.html" class="menu__link">liste</a></li>
+									<li class="menu__item"><a href="#" class="menu__link icon new-season">yeni sezon</a></li>
+									<li class="menu__item "><a href="#" class="menu__link icon discount">indirim</a></li>
+									<li class="menu__item mg"><a href="#" class="menu__link">mağazalar</a></li>
+									<li class="menu__item bl"><a href="#" class="menu__link icon blog">Blog</a></li>
+									<li class="menu__item header-brand">
+										<div class="header-brand__link"><img src="img/converse-logo.png" alt="Alt"></div>
+									</li>
+									<li class="menu__item header-brand kd brnone">
+										<div class="header-brand__link"><img src="img/keds-logo.png" alt="Alt"></div>
+									</li>
+								</ul>
+							</nav>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Products List Content -->
+		<section class="sect">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-xs-12">
+						<div class="row clearfix">
+
+							<div class="breadcrumb fitre-row">
+								<ul itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumb-list clearfix">
+									<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+										<a itemprop="item" href="https://example.com/erkek" href="#">
+											<span itemprop="name">Erkek</span>
+										</a>
+										<meta itemprop="position" content="1" />
+									</li>
+
+									<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+										<a itemprop="item" href="https://example.com/erkek" href="#">
+											<span itemprop="name">Günlük</span>
+										</a>
+										<meta itemprop="position" content="2" />
+									</li>
+
+									<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+										<a itemprop="item" href="https://example.com/erkek" href="#">
+											<span itemprop="name">Ayakkabı</span>
+										</a>
+										<meta itemprop="position" content="3" />
+									</li>
+
+									<li class="active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+										<a itemprop="item" href="https://example.com/erkek" href="#">
+											<span itemprop="name">Modelleri</span>
+										</a>
+										<meta itemprop="position" content="1" />
+									</li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-4 col-xs-6">
+
+						<div class="row">
+
+							<aside class="sidebar-filter fitre-row">
+
+								<h3 class="sidebar-title active"><span class="sidebar-title-text">markalar</span> <span class="icon-down"></span></h3>
+								
+								<div class="sidebar-list-wrap active">
+									<div class="sidebar-scroll">
+										<ul class="sidebar-list">
+											<li class="sidebar-item">
+												<div class="checkbox">
+													<label class="checkbox-label">
+														<input class="checkbox-input" type="checkbox" name="checkbox">
+														<span class="checkbox-icon"></span>
+														<span class="checkbox-text">Adidas</span>
+													</label>
+												</div>
+											</li>
+											<li class="sidebar-item">
+												<div class="checkbox">
+													<label class="checkbox-label">
+														<input class="checkbox-input" type="checkbox" name="checkbox">
+														<span class="checkbox-icon"></span>
+														<span class="checkbox-text">Aigle</span>
+													</label>
+												</div>
+											</li>
+											<li class="sidebar-item">
+												<div class="checkbox">
+													<label class="checkbox-label">
+														<input class="checkbox-input" type="checkbox" name="checkbox">
+														<span class="checkbox-icon"></span>
+														<span class="checkbox-text">Asics</span>
+													</label>
+												</div>
+											</li>
+											<li class="sidebar-item">
+												<div class="checkbox">
+													<label class="checkbox-label">
+														<input class="checkbox-input" type="checkbox" name="checkbox">
+														<span class="checkbox-icon"></span>
+														<span class="checkbox-text">Gant</span>
+													</label>
+												</div>
+											</li>
+											<li class="sidebar-item">
+												<div class="checkbox">
+													<label class="checkbox-label">
+														<input class="checkbox-input" type="checkbox" name="checkbox">
+														<span class="checkbox-icon"></span>
+														<span class="checkbox-text">G-Star Raw</span>
+													</label>
+												</div>
+											</li>
+
+											<li class="sidebar-item">
+												<div class="checkbox">
+													<label class="checkbox-label">
+														<input class="checkbox-input" type="checkbox" name="checkbox">
+														<span class="checkbox-icon"></span>
+														<span class="checkbox-text">Adidas</span>
+													</label>
+												</div>
+											</li>
+											<li class="sidebar-item">
+												<div class="checkbox">
+													<label class="checkbox-label">
+														<input class="checkbox-input" type="checkbox" name="checkbox">
+														<span class="checkbox-icon"></span>
+														<span class="checkbox-text">Aigle</span>
+													</label>
+												</div>
+											</li>
+											<li class="sidebar-item">
+												<div class="checkbox">
+													<label class="checkbox-label">
+														<input class="checkbox-input" type="checkbox" name="checkbox">
+														<span class="checkbox-icon"></span>
+														<span class="checkbox-text">Asics</span>
+													</label>
+												</div>
+											</li>
+											<li class="sidebar-item">
+												<div class="checkbox">
+													<label class="checkbox-label">
+														<input class="checkbox-input" type="checkbox" name="checkbox">
+														<span class="checkbox-icon"></span>
+														<span class="checkbox-text">Gant</span>
+													</label>
+												</div>
+											</li>
+											<li class="sidebar-item">
+												<div class="checkbox">
+													<label class="checkbox-label">
+														<input class="checkbox-input" type="checkbox" name="checkbox">
+														<span class="checkbox-icon"></span>
+														<span class="checkbox-text">G-Star Raw</span>
+													</label>
+												</div>
+											</li>
+
+											<li class="sidebar-item">
+												<div class="checkbox">
+													<label class="checkbox-label">
+														<input class="checkbox-input" type="checkbox" name="checkbox">
+														<span class="checkbox-icon"></span>
+														<span class="checkbox-text">Adidas</span>
+													</label>
+												</div>
+											</li>
+											<li class="sidebar-item">
+												<div class="checkbox">
+													<label class="checkbox-label">
+														<input class="checkbox-input" type="checkbox" name="checkbox">
+														<span class="checkbox-icon"></span>
+														<span class="checkbox-text">Aigle</span>
+													</label>
+												</div>
+											</li>
+											<li class="sidebar-item">
+												<div class="checkbox">
+													<label class="checkbox-label">
+														<input class="checkbox-input" type="checkbox" name="checkbox">
+														<span class="checkbox-icon"></span>
+														<span class="checkbox-text">Asics</span>
+													</label>
+												</div>
+											</li>
+											<li class="sidebar-item">
+												<div class="checkbox">
+													<label class="checkbox-label">
+														<input class="checkbox-input" type="checkbox" name="checkbox">
+														<span class="checkbox-icon"></span>
+														<span class="checkbox-text">Gant</span>
+													</label>
+												</div>
+											</li>
+											<li class="sidebar-item">
+												<div class="checkbox">
+													<label class="checkbox-label">
+														<input class="checkbox-input" type="checkbox" name="checkbox">
+														<span class="checkbox-icon"></span>
+														<span class="checkbox-text">G-Star Raw</span>
+													</label>
+												</div>
+											</li>
+
+											<li class="sidebar-item">
+												<div class="checkbox">
+													<label class="checkbox-label">
+														<input class="checkbox-input" type="checkbox" name="checkbox">
+														<span class="checkbox-icon"></span>
+														<span class="checkbox-text">Lacoste</span>
+													</label>
+												</div>
+											</li>
+
+											<li class="sidebar-item">
+												<div class="checkbox">
+													<label class="checkbox-label">
+														<input class="checkbox-input" type="checkbox" name="checkbox">
+														<span class="checkbox-icon"></span>
+														<span class="checkbox-text">Le Coq Sportif</span>
+													</label>
+												</div>
+											</li>
+
+											<li class="sidebar-item">
+												<div class="checkbox">
+													<label class="checkbox-label">
+														<input class="checkbox-input" type="checkbox" name="checkbox">
+														<span class="checkbox-icon"></span>
+														<span class="checkbox-text">New Balance</span>
+													</label>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<h3 class="sidebar-title"><span class="sidebar-title-text">kategoriler</span> <span class="icon-down"></span></h3>
+								
+								<div class="sidebar-list-wrap">
+									<div class="sidebar-scroll">
+										<ul class="sidebar-list">
+											<li class="sidebar-item">
+												<div class="checkbox">
+													<label class="checkbox-label">
+														<input class="checkbox-input" type="checkbox" name="checkbox">
+														<span class="checkbox-icon"></span>
+														<span class="checkbox-text">Giyim</span>
+													</label>
+												</div>
+											</li>
+											<li class="sidebar-item">
+												<div class="checkbox">
+													<label class="checkbox-label">
+														<input class="checkbox-input" type="checkbox" name="checkbox">
+														<span class="checkbox-icon"></span>
+														<span class="checkbox-text">Ayakkabı</span>
+													</label>
+												</div>
+											</li>
+											<li class="sidebar-item">
+												<div class="checkbox">
+													<label class="checkbox-label">
+														<input class="checkbox-input" type="checkbox" name="checkbox">
+														<span class="checkbox-icon"></span>
+														<span class="checkbox-text">Aksesuar</span>
+													</label>
+												</div>
+											</li>
+											<li class="sidebar-item">
+												<div class="checkbox">
+													<label class="checkbox-label">
+														<input class="checkbox-input" type="checkbox" name="checkbox">
+														<span class="checkbox-icon"></span>
+														<span class="checkbox-text">Giyim</span>
+													</label>
+												</div>
+											</li>
+											<li class="sidebar-item">
+												<div class="checkbox">
+													<label class="checkbox-label">
+														<input class="checkbox-input" type="checkbox" name="checkbox">
+														<span class="checkbox-icon"></span>
+														<span class="checkbox-text">Ayakkabı</span>
+													</label>
+												</div>
+											</li>
+											<li class="sidebar-item">
+												<div class="checkbox">
+													<label class="checkbox-label">
+														<input class="checkbox-input" type="checkbox" name="checkbox">
+														<span class="checkbox-icon"></span>
+														<span class="checkbox-text">Aksesuar</span>
+													</label>
+												</div>
+											</li>
+
+											<li class="sidebar-item">
+												<div class="checkbox">
+													<label class="checkbox-label">
+														<input class="checkbox-input" type="checkbox" name="checkbox">
+														<span class="checkbox-icon"></span>
+														<span class="checkbox-text">Giyim</span>
+													</label>
+												</div>
+											</li>
+											<li class="sidebar-item">
+												<div class="checkbox">
+													<label class="checkbox-label">
+														<input class="checkbox-input" type="checkbox" name="checkbox">
+														<span class="checkbox-icon"></span>
+														<span class="checkbox-text">Ayakkabı</span>
+													</label>
+												</div>
+											</li>
+											<li class="sidebar-item">
+												<div class="checkbox">
+													<label class="checkbox-label">
+														<input class="checkbox-input" type="checkbox" name="checkbox">
+														<span class="checkbox-icon"></span>
+														<span class="checkbox-text">Aksesuar</span>
+													</label>
+												</div>
+											</li>
+											
+										</ul>
+									</div>
+								</div>
+
+								<h3 class="sidebar-title"><span class="sidebar-title-text">kategoriler</span> <span class="icon-down"></span></h3>
+								
+								<div class="sidebar-list-wrap">
+									<div class="sidebar-scroll">
+										<ul class="sidebar-list">
+											<li class="sidebar-item">
+												<div class="checkbox">
+													<label class="checkbox-label">
+														<input class="checkbox-input" type="checkbox" name="checkbox">
+														<span class="checkbox-icon"></span>
+														<span class="checkbox-text">Giyim</span>
+													</label>
+												</div>
+											</li>
+											<li class="sidebar-item">
+												<div class="checkbox">
+													<label class="checkbox-label">
+														<input class="checkbox-input" type="checkbox" name="checkbox">
+														<span class="checkbox-icon"></span>
+														<span class="checkbox-text">Ayakkabı</span>
+													</label>
+												</div>
+											</li>
+											<li class="sidebar-item">
+												<div class="checkbox">
+													<label class="checkbox-label">
+														<input class="checkbox-input" type="checkbox" name="checkbox">
+														<span class="checkbox-icon"></span>
+														<span class="checkbox-text">Aksesuar</span>
+													</label>
+												</div>
+											</li>
+											<li class="sidebar-item">
+												<div class="checkbox">
+													<label class="checkbox-label">
+														<input class="checkbox-input" type="checkbox" name="checkbox">
+														<span class="checkbox-icon"></span>
+														<span class="checkbox-text">Giyim</span>
+													</label>
+												</div>
+											</li>
+											<li class="sidebar-item">
+												<div class="checkbox">
+													<label class="checkbox-label">
+														<input class="checkbox-input" type="checkbox" name="checkbox">
+														<span class="checkbox-icon"></span>
+														<span class="checkbox-text">Ayakkabı</span>
+													</label>
+												</div>
+											</li>
+											
+											
+										</ul>
+									</div>
+								</div>
+
+								<h3 class="sidebar-title"><span class="sidebar-title-text">Cinsiyet</span> <span class="icon-down"></span></h3>
+								
+								<div class="sidebar-list-wrap">
+									<ul class="sidebar-list">
+										<li class="sidebar-item">
+											<div class="checkbox">
+												<label class="checkbox-label">
+													<input class="checkbox-input" type="checkbox" name="checkbox">
+													<span class="checkbox-icon"></span>
+													<span class="checkbox-text">bay</span>
+												</label>
+											</div>
+										</li>
+										<li class="sidebar-item">
+											<div class="checkbox">
+												<label class="checkbox-label">
+													<input class="checkbox-input" type="checkbox" name="checkbox">
+													<span class="checkbox-icon"></span>
+													<span class="checkbox-text">bayan</span>
+												</label>
+											</div>
+										</li>
+									</ul>
+								</div>
+
+								<h3 class="sidebar-title active"><span class="sidebar-title-text">Renk</span> <span class="icon-down"></span></h3>
+								
+								<div class="sidebar-list-wrap active">
+									<ul class="sidebar-list">
+										<li class="sidebar-item">
+											<div class="checkbox">
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon by">
+														</span>
+													</div>
+													<span class="checkbox-text">Beyaz</span>
+												</label>
+											</div>
+										</li>
+
+										<li class="sidebar-item">
+											<div class="checkbox">
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon mv">
+														</span>
+													</div>
+													<span class="checkbox-text">mavi</span>
+												</label>
+											</div>
+										</li>
+
+										<li class="sidebar-item">
+											<div class="checkbox">
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon kr">
+														</span>
+													</div>
+													<span class="checkbox-text">kırımızı</span>
+												</label>
+											</div>
+										</li>
+
+										<li class="sidebar-item">
+											<div class="checkbox">
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon ys">
+														</span>
+													</div>
+													<span class="checkbox-text">yesil</span>
+												</label>
+											</div>
+										</li>
+										<li class="sidebar-item">
+											<div class="checkbox">
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon sy">
+														</span>
+													</div>
+													<span class="checkbox-text">siyah</span>
+												</label>
+											</div>
+										</li>
+								<!-- 		<li class="sidebar-item">
+											<div class="checkbox">
+												<label class="checkbox-label checkbox-color">
+													<input class="checkbox-input" type="radio" name="checkbox">
+													<span class="checkbox-icon by"></span>
+													<span class="checkbox-text">beyaz</span>
+												</label>
+											</div>
+										</li>
+										<li class="sidebar-item">
+											<div class="checkbox">
+												<label class="checkbox-label checkbox-color">
+													<input class="checkbox-input" type="radio" name="checkbox">
+													<span class="checkbox-icon mv"></span>
+													<span class="checkbox-text">mavi</span>
+												</label>
+											</div>
+										</li>
+										<li class="sidebar-item">
+											<div class="checkbox">
+												<label class="checkbox-label checkbox-color">
+													<input class="checkbox-input" type="radio" name="checkbox">
+													<span class="checkbox-icon kr"></span>
+													<span class="checkbox-text">kırımızı</span>
+												</label>
+											</div>
+										</li>
+										<li class="sidebar-item">
+											<div class="checkbox">
+												<label class="checkbox-label checkbox-color">
+													<input class="checkbox-input" type="radio" name="checkbox">
+													<span class="checkbox-icon ys"></span>
+													<span class="checkbox-text">yeşil</span>
+												</label>
+											</div>
+										</li> -->
+									</ul>
+								</div>
+
+								<h3 class="sidebar-title"><span class="sidebar-title-text">beden</span> <span class="icon-down"></span></h3>
+
+								<div class="sidebar-list-wrap">
+									<ul class="sidebar-list">
+										<li class="sidebar-item">
+											<div class="checkbox">
+												<label class="checkbox-label">
+													<input class="checkbox-input" type="checkbox" name="checkbox">
+													<span class="checkbox-icon"></span>
+													<span class="checkbox-text">38</span>
+												</label>
+											</div>
+										</li>
+										<li class="sidebar-item">
+											<div class="checkbox">
+												<label class="checkbox-label">
+													<input class="checkbox-input" type="checkbox" name="checkbox">
+													<span class="checkbox-icon"></span>
+													<span class="checkbox-text">39</span>
+												</label>
+											</div>
+										</li>
+										<li class="sidebar-item">
+											<div class="checkbox">
+												<label class="checkbox-label">
+													<input class="checkbox-input" type="checkbox" name="checkbox">
+													<span class="checkbox-icon"></span>
+													<span class="checkbox-text">40</span>
+												</label>
+											</div>
+										</li>
+										<li class="sidebar-item">
+											<div class="checkbox">
+												<label class="checkbox-label">
+													<input class="checkbox-input" type="checkbox" name="checkbox">
+													<span class="checkbox-icon"></span>
+													<span class="checkbox-text">41</span>
+												</label>
+											</div>
+										</li>
+									</ul>
+								</div>
+
+							</aside>
+
+						</div>
+
+					</div>
+
+					<div class="col-md-9 col-sm-8 col-xs-12">
+
+						<section class="content-list">
+
+							<!-- 	content-top -->
+							<div class="content-top clearfix">
+								<div class="col-md-7 col-sm-7 col-xs-12  hidden-sm hidden-xs">
+									<div class="row">
+										<img src="img/Products-List/list-top-img.jpg" class="img-responsive" alt="Img">
+									</div>
+								</div>
+								<div class="col-md-5 col-sm-12 col-xs-12">
+									<div class="content-top-right">
+										<h2 class="content-top-title">NIKE</h2>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec justo dolor. Vivamus nec gravida dolor, vitae vehicula turpis. </p>
+										<p>Sed eu lacus vel turpis tincidunt fermentum laoreetin ante. Duis ullamcorper consequat massa at interd</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- 	content-bottom -->
+							<div class="content-bottom">
+								<div class="row clearfix">
+									<div class="col-sm-12">
+										<div class="button-sort-wrap">
+											<div class="button-sort button-sort-up active">
+												Fiyata Göre Artan
+											</div>
+											<div class="button-sort button-sort-down">
+												Fiyata Göre Azalan
+											</div>
+										</div>
+
+										<div class="sorting clearfix">
+
+											<ul class="sorting-col active clearfix">
+												<li></li>
+												<li></li>
+												<li></li>
+												<li>3</li>
+											</ul>
+
+											<ul class="sorting-col clearfix">
+												<li></li>
+												<li></li>
+												<li></li>
+												<li></li>
+												<li>4</li>
+											</ul>
+										</div>
+
+										<div class="sorting pull-right  clearfix">
+											<ul class="clearfix pull-right pg">
+												<li class="active">1</li>
+												<li>2</li>
+												<li>3</li>
+												<li>4</li>
+											</ul>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							
+							<!-- content-products	 -->
+							<div class="content-products row clearfix" id="content-products">
+
+								<div class="col-md-4 col-sm-6 col-xs-6" itemscope itemtype="http://schema.org/Product">
+									<div class="content-product-item clearfix">
+										<small class="male"></small>
+										<small class="small-logo"></small>
+										<a itemprop="url" class="content-product-link" href="products-detail.html">
+											<figure class="content-product-link-img">
+												<img itemprop="image" src="img/preloader/5.gif" class="lazy img-responsive" data-original="img/content-product/list-img2.jpg" alt="Img">
+											</figure>
+										</a>
+										<div class="content-product-info">
+											<span itemprop="name" class="content-product-name">Nike</span>
+											<div class="content-product-descr">
+												<span itemprop="description">Nike Air Max Tavas Ayakkabı</span>
+											</div>
+
+											<div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+												<span class="sales">
+													<del class="old-sales">200,00</del>
+												</span>
+												<span class="sales">
+													<ins itemprop="price" content="359.00" class="new-sales">359,00</ins>
+												</span>
+												<meta itemprop="priceCurrency" content="TRY">
+												<meta itemprop="price" content="200.00">
+											</div>
+
+											<div class="select-color clearfix">
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon kr">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon ys">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon mv">
+														</span>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-md-4 col-sm-6 col-xs-6">
+
+									<div class="content-product-item clearfix">
+										<small class="male"></small>
+										<small class="small-logo"></small>
+										<a class="content-product-link" href="products-detail.html">
+											<figure class="content-product-link-img">
+												<img src="img/preloader/5.gif" class="lazy img-responsive" data-original="img/content-product/list-img.jpg" alt="Img">
+											</figure>
+										</a>
+										<div class="content-product-info">
+											<span class="content-product-name">Nike</span>
+											<div class="content-product-descr">
+												<span>Nike Air Max Tavas Ayakkabı</span>
+											</div>
+											<del class="sales old-sales">349,00</del>
+											<span class="sales new-sales">244,00</span>
+											<div class="select-color clearfix">
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon kr">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon ys">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon mv">
+														</span>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4 col-sm-6 col-xs-6">
+									<div class="content-product-item clearfix">
+										<small class="male"></small>
+										<small class="small-logo"></small>
+										<a class="content-product-link" href="products-detail.html">
+											<figure class="content-product-link-img">
+												<img src="img/preloader/5.gif" class="lazy img-responsive" data-original="img/content-product/list-img3.jpg" alt="Img">
+											</figure>
+										</a>
+										<div class="content-product-info">
+											<span class="content-product-name">Nike</span>
+											<div class="content-product-descr">
+												<span>Nike Air Max Tavas Ayakkabı</span>
+											</div>
+											<del class="sales old-sales">349,00</del>
+											<span class="sales new-sales">244,00</span>
+											<div class="select-color clearfix">
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon kr">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon ys">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon mv">
+														</span>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4 col-sm-6 col-xs-6">
+									<div class="content-product-item clearfix">
+										<small class="male"></small>
+										<small class="small-logo"></small>
+										<a class="content-product-link" href="products-detail.html">
+											<figure class="content-product-link-img">
+												<img src="img/preloader/5.gif" class="lazy img-responsive" data-original="img/content-product/list-img.jpg" alt="Img">
+											</figure>
+										</a>
+										<div class="content-product-info">
+											<span class="content-product-name">Nike</span>
+											<div class="content-product-descr">
+												<span>Nike Air Max Tavas Ayakkabı</span>
+											</div>
+											<del class="sales old-sales">349,00</del>
+											<span class="sales new-sales">244,00</span>
+											<div class="select-color clearfix">
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon kr">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon ys">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon mv">
+														</span>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4 col-sm-6 col-xs-6">
+									<div class="content-product-item clearfix">
+										<small class="male"></small>
+										<small class="small-logo"></small>
+										<a class="content-product-link" href="products-detail.html">
+											<figure class="content-product-link-img">
+												<img src="img/preloader/5.gif" class="lazy img-responsive" data-original="img/content-product/list-img.jpg" alt="Img">
+											</figure>
+										</a>
+										<div class="content-product-info">
+											<span class="content-product-name">Nike</span>
+											<div class="content-product-descr">
+												<span>Nike Air Max Tavas Ayakkabı</span>
+											</div>
+											<del class="sales old-sales">349,00</del>
+											<span class="sales new-sales">244,00</span>
+											<div class="select-color clearfix">
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon kr">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon ys">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon mv">
+														</span>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4 col-sm-6 col-xs-6">
+									<div class="content-product-item clearfix">
+										<small class="male"></small>
+										<small class="small-logo"></small>
+										<a class="content-product-link" href="products-detail.html">
+											<figure class="content-product-link-img">
+												<img src="img/preloader/5.gif" class="lazy img-responsive" data-original="img/content-product/list-img2.jpg" alt="Img">
+											</figure>
+										</a>
+										<div class="content-product-info">
+											<span class="content-product-name">Nike</span>
+											<div class="content-product-descr">
+												<span>Nike Air Max Tavas Ayakkabı</span>
+											</div>
+											<del class="sales old-sales">349,00</del>
+											<span class="sales new-sales">244,00</span>
+											<div class="select-color clearfix">
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon kr">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon ys">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon mv">
+														</span>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4 col-sm-6 col-xs-6">
+									<div class="content-product-item clearfix">
+										<small class="male"></small>
+										<small class="small-logo"></small>
+										<a class="content-product-link" href="products-detail.html">
+											<figure class="content-product-link-img">
+												<img src="img/preloader/5.gif" class="lazy img-responsive" data-original="img/content-product/list-img3.jpg" alt="Img">
+											</figure>
+										</a>
+										<div class="content-product-info">
+											<span class="content-product-name">Nike</span>
+											<div class="content-product-descr">
+												<span>Nike Air Max Tavas Ayakkabı</span>
+											</div>
+											<del class="sales old-sales">349,00</del>
+											<span class="sales new-sales">244,00</span>
+											<div class="select-color clearfix">
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon kr">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon ys">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon mv">
+														</span>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4 col-sm-6 col-xs-6">
+									<div class="content-product-item clearfix">
+										<small class="male"></small>
+										<small class="small-logo"></small>
+										<a class="content-product-link" href="products-detail.html">
+											<figure class="content-product-link-img">
+												<img src="img/preloader/5.gif" class="lazy img-responsive" data-original="img/content-product/list-img.jpg" alt="Img">
+											</figure>
+										</a>
+										<div class="content-product-info">
+											<span class="content-product-name">Nike</span>
+											<div class="content-product-descr">
+												<span>Nike Air Max Tavas Ayakkabı</span>
+											</div>
+											<del class="sales old-sales">349,00</del>
+											<span class="sales new-sales">244,00</span>
+											<div class="select-color clearfix">
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon kr">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon ys">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon mv">
+														</span>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4 col-sm-6 col-xs-6">
+									<div class="content-product-item clearfix">
+										<small class="male"></small>
+										<small class="small-logo"></small>
+										<a class="content-product-link" href="products-detail.html">
+											<figure class="content-product-link-img">
+												<img src="img/preloader/5.gif" class="lazy img-responsive" data-original="img/content-product/list-img.jpg" alt="Img">
+											</figure>
+										</a>
+										<div class="content-product-info">
+											<span class="content-product-name">Nike</span>
+											<div class="content-product-descr">
+												<span>Nike Air Max Tavas Ayakkabı</span>
+											</div>
+											<del class="sales old-sales">349,00</del>
+											<span class="sales new-sales">244,00</span>
+											<div class="select-color clearfix">
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon kr">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon ys">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon mv">
+														</span>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4 col-sm-6 col-xs-6">
+									<div class="content-product-item clearfix">
+										<small class="male"></small>
+										<small class="small-logo"></small>
+										<a class="content-product-link" href="products-detail.html">
+											<figure class="content-product-link-img">
+												<img src="img/preloader/5.gif" class="lazy img-responsive" data-original="img/content-product/list-img2.jpg" alt="Img">
+											</figure>
+										</a>
+										<div class="content-product-info">
+											<span class="content-product-name">Nike</span>
+											<div class="content-product-descr">
+												<span>Nike Air Max Tavas Ayakkabı</span>
+											</div>
+											<del class="sales old-sales">349,00</del>
+											<span class="sales new-sales">244,00</span>
+											<div class="select-color clearfix">
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon kr">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon ys">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon mv">
+														</span>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4 col-sm-6 col-xs-6">
+									<div class="content-product-item clearfix">
+										<small class="male"></small>
+										<small class="small-logo"></small>
+										<a class="content-product-link" href="products-detail.html">
+											<figure class="content-product-link-img">
+												<img src="img/preloader/5.gif" class="lazy img-responsive" data-original="img/content-product/list-img3.jpg" alt="Img">
+											</figure>
+										</a>
+										<div class="content-product-info">
+											<span class="content-product-name">Nike</span>
+											<div class="content-product-descr">
+												<span>Nike Air Max Tavas Ayakkabı</span>
+											</div>
+											<del class="sales old-sales">349,00</del>
+											<span class="sales new-sales">244,00</span>
+											<div class="select-color clearfix">
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon kr">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon ys">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon mv">
+														</span>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4 col-sm-6 col-xs-6">
+									<div class="content-product-item clearfix">
+										<small class="male"></small>
+										<small class="small-logo"></small>
+										<a class="content-product-link" href="products-detail.html">
+											<figure class="content-product-link-img">
+												<img src="img/preloader/5.gif" class="lazy img-responsive" data-original="img/content-product/list-img.jpg" alt="Img">
+											</figure>
+										</a>
+										<div class="content-product-info">
+											<span class="content-product-name">Nike</span>
+											<div class="content-product-descr">
+												<span>Nike Air Max Tavas Ayakkabı</span>
+											</div>
+											<del class="sales old-sales">349,00</del>
+											<span class="sales new-sales">244,00</span>
+											<div class="select-color clearfix">
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon kr">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon ys">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon mv">
+														</span>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4 col-sm-6 col-xs-6">
+									<div class="content-product-item clearfix">
+										<small class="male"></small>
+										<small class="small-logo"></small>
+										<a class="content-product-link" href="products-detail.html">
+											<figure class="content-product-link-img">
+												<img src="img/preloader/5.gif" class="lazy img-responsive" data-original="img/content-product/list-img.jpg" alt="Img">
+											</figure>
+										</a>
+										<div class="content-product-info">
+											<span class="content-product-name">Nike</span>
+											<div class="content-product-descr">
+												<span>Nike Air Max Tavas Ayakkabı</span>
+											</div>
+											<del class="sales old-sales">349,00</del>
+											<span class="sales new-sales">244,00</span>
+											<div class="select-color clearfix">
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon kr">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon ys">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon mv">
+														</span>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4 col-sm-6 col-xs-6">
+									<div class="content-product-item clearfix">
+										<small class="male"></small>
+										<small class="small-logo"></small>
+										<a class="content-product-link" href="products-detail.html">
+											<figure class="content-product-link-img">
+												<img src="img/preloader/5.gif" class="lazy img-responsive" data-original="img/content-product/list-img2.jpg" alt="Img">
+											</figure>
+										</a>
+										<div class="content-product-info">
+											<span class="content-product-name">Nike</span>
+											<div class="content-product-descr">
+												<span>Nike Air Max Tavas Ayakkabı</span>
+											</div>
+											<del class="sales old-sales">349,00</del>
+											<span class="sales new-sales">244,00</span>
+											<div class="select-color clearfix">
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon kr">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon ys">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon mv">
+														</span>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4 col-sm-6 col-xs-6">
+									<div class="content-product-item clearfix">
+										<small class="male"></small>
+										<small class="small-logo"></small>
+										<a class="content-product-link" href="products-detail.html">
+											<figure class="content-product-link-img">
+												<img src="img/preloader/5.gif" class="lazy img-responsive" data-original="img/content-product/list-img3.jpg" alt="Img">
+											</figure>
+										</a>
+										<div class="content-product-info">
+											<span class="content-product-name">Nike</span>
+											<div class="content-product-descr">
+												<span>Nike Air Max Tavas Ayakkabı</span>
+											</div>
+											<del class="sales old-sales">349,00</del>
+											<span class="sales new-sales">244,00</span>
+											<div class="select-color clearfix">
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon kr">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon ys">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon mv">
+														</span>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4 col-sm-6 col-xs-6">
+									<div class="content-product-item clearfix">
+										<small class="male"></small>
+										<small class="small-logo"></small>
+										<a class="content-product-link" href="products-detail.html">
+											<figure class="content-product-link-img">
+												<img src="img/preloader/5.gif" class="lazy img-responsive" data-original="img/content-product/list-img.jpg" alt="Img">
+											</figure>
+										</a>
+										<div class="content-product-info">
+											<span class="content-product-name">Nike</span>
+											<div class="content-product-descr">
+												<span>Nike Air Max Tavas Ayakkabı</span>
+											</div>
+											<del class="sales old-sales">349,00</del>
+											<span class="sales new-sales">244,00</span>
+											<div class="select-color clearfix">
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon kr">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon ys">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon mv">
+														</span>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4 col-sm-6 col-xs-6">
+									<div class="content-product-item clearfix">
+										<small class="male"></small>
+										<small class="small-logo"></small>
+										<a class="content-product-link" href="products-detail.html">
+											<figure class="content-product-link-img">
+												<img src="img/preloader/5.gif" class="lazy img-responsive" data-original="img/content-product/list-img.jpg" alt="Img">
+											</figure>
+										</a>
+										<div class="content-product-info">
+											<span class="content-product-name">Nike</span>
+											<div class="content-product-descr">
+												<span>Nike Air Max Tavas Ayakkabı</span>
+											</div>
+											<del class="sales old-sales">349,00</del>
+											<span class="sales new-sales">244,00</span>
+											<div class="select-color clearfix">
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon kr">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon ys">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon mv">
+														</span>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4 col-sm-6 col-xs-6">
+									<div class="content-product-item clearfix">
+										<small class="male"></small>
+										<small class="small-logo"></small>
+										<a class="content-product-link" href="products-detail.html">
+											<figure class="content-product-link-img">
+												<img src="img/preloader/5.gif" class="lazy img-responsive" data-original="img/content-product/list-img2.jpg" alt="Img">
+											</figure>
+										</a>
+										<div class="content-product-info">
+											<span class="content-product-name">Nike</span>
+											<div class="content-product-descr">
+												<span>Nike Air Max Tavas Ayakkabı</span>
+											</div>
+											<del class="sales old-sales">349,00</del>
+											<span class="sales new-sales">244,00</span>
+											<div class="select-color clearfix">
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon kr">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon ys">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon mv">
+														</span>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4 col-sm-6 col-xs-6">
+									<div class="content-product-item clearfix">
+										<small class="male"></small>
+										<small class="small-logo"></small>
+										<a class="content-product-link" href="products-detail.html">
+											<figure class="content-product-link-img">
+												<img src="img/preloader/5.gif" class="lazy img-responsive" data-original="img/content-product/list-img3.jpg" alt="Img">
+											</figure>
+										</a>
+										<div class="content-product-info">
+											<span class="content-product-name">Nike</span>
+											<div class="content-product-descr">
+												<span>Nike Air Max Tavas Ayakkabı</span>
+											</div>
+											<del class="sales old-sales">349,00</del>
+											<span class="sales new-sales">244,00</span>
+											<div class="select-color clearfix">
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon kr">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon ys">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon mv">
+														</span>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4 col-sm-6 col-xs-6">
+									<div class="content-product-item clearfix">
+										<small class="male"></small>
+										<small class="small-logo"></small>
+										<a class="content-product-link" href="products-detail.html">
+											<figure class="content-product-link-img">
+												<img src="img/preloader/5.gif" class="lazy img-responsive" data-original="img/content-product/list-img.jpg" alt="Img">
+											</figure>
+										</a>
+										<div class="content-product-info">
+											<span class="content-product-name">Nike</span>
+											<div class="content-product-descr">
+												<span>Nike Air Max Tavas Ayakkabı</span>
+											</div>
+											<del class="sales old-sales">349,00</del>
+											<span class="sales new-sales">244,00</span>
+											<div class="select-color clearfix">
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon kr">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon ys">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon mv">
+														</span>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4 col-sm-6 col-xs-6">
+									<div class="content-product-item clearfix">
+										<small class="male"></small>
+										<small class="small-logo"></small>
+										<a class="content-product-link" href="products-detail.html">
+											<figure class="content-product-link-img">
+												<img src="img/preloader/5.gif" class="lazy img-responsive" data-original="img/content-product/list-img.jpg" alt="Img">
+											</figure>
+										</a>
+										<div class="content-product-info">
+											<span class="content-product-name">Nike</span>
+											<div class="content-product-descr">
+												<span>Nike Air Max Tavas Ayakkabı</span>
+											</div>
+											<del class="sales old-sales">349,00</del>
+											<span class="sales new-sales">244,00</span>
+											<div class="select-color clearfix">
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon kr">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon ys">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon mv">
+														</span>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4 col-sm-6 col-xs-6">
+									<div class="content-product-item clearfix">
+										<small class="male"></small>
+										<small class="small-logo"></small>
+										<a class="content-product-link" href="products-detail.html">
+											<figure class="content-product-link-img">
+												<img src="img/preloader/5.gif" class="lazy img-responsive" data-original="img/content-product/list-img2.jpg" alt="Img">
+											</figure>
+										</a>
+										<div class="content-product-info">
+											<span class="content-product-name">Nike</span>
+											<div class="content-product-descr">
+												<span>Nike Air Max Tavas Ayakkabı</span>
+											</div>
+											<del class="sales old-sales">349,00</del>
+											<span class="sales new-sales">244,00</span>
+											<div class="select-color clearfix">
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon kr">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon ys">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon mv">
+														</span>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4 col-sm-6 col-xs-6">
+									<div class="content-product-item clearfix">
+										<small class="male"></small>
+										<small class="small-logo"></small>
+										<a class="content-product-link" href="products-detail.html">
+											<figure class="content-product-link-img">
+												<img src="img/preloader/5.gif" class="lazy img-responsive" data-original="img/content-product/list-img3.jpg" alt="Img">
+											</figure>
+										</a>
+										<div class="content-product-info">
+											<span class="content-product-name">Nike</span>
+											<div class="content-product-descr">
+												<span>Nike Air Max Tavas Ayakkabı</span>
+											</div>
+											<del class="sales old-sales">349,00</del>
+											<span class="sales new-sales">244,00</span>
+											<div class="select-color clearfix">
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon kr">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon ys">
+														</span>
+													</div>
+												</label>
+
+												<label class="checkbox-label c-radio-label">
+													<input class="c-radio-input" type="radio" name="checkbox">
+													<div class="color-wrap">
+														<span class="c-radio-icon mv">
+														</span>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+						</section>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- Products List Content -->
+		<div class="push"></div>
+		
+	</div>
+
+	<!-- Footer start -->
+	<footer class="footer" itemscope="" itemtype="https://schema.org/WPFooter">
+		<div class="footer-top">
+			<div class="container">
+				<div class="footer-center">
+					<div class="row">
+						<div class="col-md-2 col-sm-6 col-xs-12">
+							<h4>HESAP BİLGİLERİ</h4>
+							<ul>
+								<li><a rel="nofollow" href="#">Üyelik Bilgilerim</a></li>
+								<li><a rel="nofollow" href="#">Sepetim</a></li>
+								<li><a rel="nofollow" href="#">Siparişlerim</a></li>
+								<li><a rel="nofollow" href="#">Adreslerim</a></li>
+								<li><a rel="nofollow" href="#">Favorileri Ürünlerim</a></li>
+								<li><a rel="nofollow" href="#">Şifre Değiştir</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2 col-sm-6 col-xs-12">
+							<h4>MÜŞTERİ HİZMETLERİ</h4>
+							<ul>
+								<li><a rel="nofollow" href="#">İletişim</a></li>
+								<li><a rel="nofollow" href="#">Sık Sorulan Sorular</a></li>
+								<li><a rel="nofollow" href="#">Kullanım Şartları</a></li>
+								<li><a rel="nofollow" href="#">Gizlilik ve Güvenlik</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2 col-sm-6 col-xs-12">
+							<h4>KURUMSAL</h4>
+							<ul>
+								<li><a rel="nofollow" href="#">Hakkımızda</a></li>
+							</ul>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<h4>BLOG</h4>
+							<div class="footer-blogs-logo">
+								<a href="#"><img src="img/footer-link-superste.png" alt="Superstep"></a>
+								<a href="#"><img src="img/footer-link-localhoste.png" alt="Lacoste"></a>
+							</div>
+							<ul>
+								<li><a rel="nofollow" href="#">blog.superstep.com.tr</a></li>
+								<li><a rel="nofollow" href="#">blog.lacoste.com.tr</a></li>
+							</ul>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<h4>SOSYAL MEDYA</h4>
+							<div class="social-sprite">
+								<a rel="nofollow" href="#">facebook.com/SuperStepTR</a>
+								<a rel="nofollow" href="#">instagram.com/superstepcom</a>
+								<a rel="nofollow" href="#">twitter.com/SuperStepTR</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<a href="#" class="footer-bottom-logo">
+							<img src="img/footer-logo.png" alt="Logo Footer">
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<p class="copyright">
+							&copy; Copyright
+							<span itemprop="copyrightYear">2016</span>
+							<meta itemprop="copyrightHolder" content="Интернет-mağazası Superstep">
+							<span itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person">
+								<span itemprop="name">Superstep</span>
+							</span>.
+						</p>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="bank-cart">
+							<img src="img/cart-sprites.png" alt="Bank kart">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="top"><img src="img/yukari.png" alt=""></div>
+	</footer>
+	<!-- Footer the end-->
+
+	<script src="js/scripts.min.js"></script>
+
+	<!-- loader -->
+<!-- 	<script>
+		(function(window){
+			function onScroll(){
+				console.log(document.body.scrollHeight,window.pageYOffset +window.innerHeight + 1);
+				if(document.body.scrollHeight <= window.pageYOffset + window.innerHeight + 1) {
+					var div = document.createElement('section');
+					div.innerHTML += document.getElementById('templ1').textContent; 
+					document.getElementById('content-products').appendChild(div);
+				}
+			}
+			window.addEventListener('scroll', onScroll);
+			console.dir(document.body);
+		}(window));
+	</script>
+	<script type="text/template" id="templ1">
+
+		<div class="col-md-4 col-sm-6 col-xs-6">
+			<div class="content-product-item clearfix">
+				<small class="male"></small>
+				<small class="small-logo"></small>
+				<a class="content-product-link" href="products-detail.html">
+					<figure class="content-product-link-img">
+						<img src="img/preloader/5.gif" class="lazy img-responsive" data-original="img/content-product/list-img.jpg" alt="Img">
+					</figure>
+				</a>
+				<div class="content-product-info">
+					<span class="content-product-name">Nike</span>
+					<div class="content-product-descr">
+						<span>Nike Air Max Tavas Ayakkabı</span>
+					</div>
+					<del class="sales old-sales">349,00</del>
+					<span class="sales new-sales">244,00</span>
+					<div class="select-color clearfix">
+						<label class="checkbox-label c-radio-label">
+							<input class="c-radio-input" type="radio" name="checkbox">
+							<div class="color-wrap">
+								<span class="c-radio-icon kr">
+								</span>
+							</div>
+						</label>
+
+						<label class="checkbox-label c-radio-label">
+							<input class="c-radio-input" type="radio" name="checkbox">
+							<div class="color-wrap">
+								<span class="c-radio-icon ys">
+								</span>
+							</div>
+						</label>
+
+						<label class="checkbox-label c-radio-label">
+							<input class="c-radio-input" type="radio" name="checkbox">
+							<div class="color-wrap">
+								<span class="c-radio-icon mv">
+								</span>
+							</div>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4 col-sm-6 col-xs-6">
+			<div class="content-product-item clearfix">
+				<small class="male"></small>
+				<small class="small-logo"></small>
+				<a class="content-product-link" href="products-detail.html">
+					<figure class="content-product-link-img">
+						<img src="img/preloader/5.gif" class="lazy img-responsive" data-original="img/content-product/list-img2.jpg" alt="Img">
+					</figure>
+				</a>
+				<div class="content-product-info">
+					<span class="content-product-name">Nike</span>
+					<div class="content-product-descr">
+						<span>Nike Air Max Tavas Ayakkabı</span>
+					</div>
+					<del class="sales old-sales">349,00</del>
+					<span class="sales new-sales">244,00</span>
+					<div class="select-color clearfix">
+						<label class="checkbox-label c-radio-label">
+							<input class="c-radio-input" type="radio" name="checkbox">
+							<div class="color-wrap">
+								<span class="c-radio-icon kr">
+								</span>
+							</div>
+						</label>
+
+						<label class="checkbox-label c-radio-label">
+							<input class="c-radio-input" type="radio" name="checkbox">
+							<div class="color-wrap">
+								<span class="c-radio-icon ys">
+								</span>
+							</div>
+						</label>
+
+						<label class="checkbox-label c-radio-label">
+							<input class="c-radio-input" type="radio" name="checkbox">
+							<div class="color-wrap">
+								<span class="c-radio-icon mv">
+								</span>
+							</div>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4 col-sm-6 col-xs-6">
+			<div class="content-product-item clearfix">
+				<small class="male"></small>
+				<small class="small-logo"></small>
+				<a class="content-product-link" href="products-detail.html">
+					<figure class="content-product-link-img">
+						<img src="img/preloader/5.gif" class="lazy img-responsive" data-original="img/content-product/list-img3.jpg" alt="Img">
+					</figure>
+				</a>
+				<div class="content-product-info">
+					<span class="content-product-name">Nike</span>
+					<div class="content-product-descr">
+						<span>Nike Air Max Tavas Ayakkabı</span>
+					</div>
+					<del class="sales old-sales">349,00</del>
+					<span class="sales new-sales">244,00</span>
+					<div class="select-color clearfix">
+						<label class="checkbox-label c-radio-label">
+							<input class="c-radio-input" type="radio" name="checkbox">
+							<div class="color-wrap">
+								<span class="c-radio-icon kr">
+								</span>
+							</div>
+						</label>
+
+						<label class="checkbox-label c-radio-label">
+							<input class="c-radio-input" type="radio" name="checkbox">
+							<div class="color-wrap">
+								<span class="c-radio-icon ys">
+								</span>
+							</div>
+						</label>
+
+						<label class="checkbox-label c-radio-label">
+							<input class="c-radio-input" type="radio" name="checkbox">
+							<div class="color-wrap">
+								<span class="c-radio-icon mv">
+								</span>
+							</div>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</script> -->
+	<!-- loader -->
+
+</body>
+</html>
